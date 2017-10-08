@@ -1,0 +1,21 @@
+# TEX 
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.hst
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.ver
+*.xml
+
+# Visual Studio Code
+.vscode 
+
+# C++ (windows)
+*.exe
+
+# Unfinished
+ceteiep_dsa_book.pdf

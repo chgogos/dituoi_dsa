@@ -1,0 +1,10 @@
+nikos	55
+maria	30
+petros	70
+sofia	80
+kostas	10
+dimitra	25
+giorgos	75
+christos	90
+anna	100
+apostolis	30

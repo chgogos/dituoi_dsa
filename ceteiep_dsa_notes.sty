@@ -1,0 +1,55 @@
+\usepackage{hyperref}
+
+\usepackage{enumitem} % αποσταση μεταξύ items της λίστας
+
+\usepackage{vhistory}
+
+\usepackage[hmargin=2cm,vmargin=3cm]{geometry}
+
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setdefaultlanguage{greek}
+%\setmonofont[Ligatures=TeX]{Consolas}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{lbcolor}{rgb}{0.95,0.95,0.95}
+\lstset{
+  backgroundcolor=\color{lbcolor},
+%  backgroundcolor=\color{white},
+  tabsize=4,
+  language=C++,
+  captionpos=b,
+  tabsize=3,
+  frame=lines,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=5pt,
+  breaklines=true,
+  showstringspaces=false,
+%  basicstyle=\footnotesize,
+  basicstyle=\footnotesize\linespread{0.8},
+  columns=fullflexible,
+  %identifierstyle=\color{magenta},
+  keywordstyle=\color[rgb]{0,0,1},
+  commentstyle=\color[rgb]{0,0.5,0},
+  stringstyle=\color{red},
+  upquote=true
+  }
+  
+\lstdefinestyle{DOS}
+{
+	keywordstyle=\color{black},
+    stringstyle=\color{black},
+    backgroundcolor=\color{white},
+    basicstyle=\scriptsize\color{black}
+}
+\renewcommand{\lstlistingname}{Κώδικας}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
