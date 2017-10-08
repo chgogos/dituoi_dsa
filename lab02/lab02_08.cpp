@@ -1,24 +1,15 @@
-#include <algorithm>
-#include <iostream>
+#define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this
+                          // in one cpp file
+#include "catch.hpp"
 
-using namespace std;
+unsigned int Factorial(unsigned int number) {
+  return number <= 1 ? number : Factorial(number - 1) * number;
+}
 
-int main() {
-  mt19937 mt(1821);
-  uniform_int_distribution<int> dist(1, 10000);
-  constexpr int N = 1000;
-  constexpr int M = 100000;
-  int a[N];
-  int b[M];
-  for (int i = 0; i < N; i++)
-    a[i] = dist(mt);
-  for (int i = 0; i < M; i++)
-    b[i] = dist(mt);
-  sort(a, a + N);
-  int c = 0;
-  for (int i = 0; i < M; i++)
-    if (binary_search(a, a + N, b[i]))
-      c++;
-  cout << "Result " << c << endl;
-  return 0;
+TEST_CASE("Factorials are computed", "[factorial]") {
+  REQUIRE(Factorial(0) == 1);
+  REQUIRE(Factorial(1) == 1);
+  REQUIRE(Factorial(2) == 2);
+  REQUIRE(Factorial(3) == 6);
+  REQUIRE(Factorial(10) == 3628800);
 }

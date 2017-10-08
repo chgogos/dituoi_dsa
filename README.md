@@ -6,9 +6,9 @@
 
 Δείκτες, δέσμευση-αποδέσμευση μνήμης, πίνακες, πέρασμα παραμέτρων με τιμή και με αναφορά σε συναρτήσεις, δομές, κλάσεις - αντικείμενα, ανάγνωση - εγγραφή αρχείων.
 
-### Εργαστήριο 2 - Εισαγωγή στα templates και στη STL
+### Εργαστήριο 2 - Εισαγωγή στα templates και στην STL
 
-Templates, STL containers, STL iterators, STL αλγόριθμοι.
+Templates, STL containers, STL iterators, STL αλγόριθμοι, Test Driven Development στη C++ με τη βιβλιοθήκη [catch](https://github.com/philsquared/Catch).
 
 ### Εργαστήριο 3 - Αλγόριθμοι αναζήτησης και ταξινόμησης
 

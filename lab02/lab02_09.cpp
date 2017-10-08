@@ -1,16 +1,15 @@
-#include <array>
-#include <iostream>
-#include <numeric>
-#include <vector>
+#define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this
+                          // in one cpp file
+#include "catch.hpp"
 
-using namespace std;
+unsigned int Factorial(unsigned int number) {
+  return number > 1 ? Factorial(number - 1) * number : 1;
+}
 
-int main() {
-  vector<int> v{5, 15, 20, 17, 11, 9};
-  int sum = accumulate(v.begin(), v.end(), 0);
-  cout << "Sum over vector using accumulate: " << sum << endl;
-
-  array<int, 6> a{5, 15, 20, 17, 11, 9};
-  sum = accumulate(a.begin(), a.end(), 0);
-  cout << "Sum over array using accumulate: " << sum << endl;
+TEST_CASE("Factorials are computed", "[factorial]") {
+  REQUIRE(Factorial(0) == 1);
+  REQUIRE(Factorial(1) == 1);
+  REQUIRE(Factorial(2) == 2);
+  REQUIRE(Factorial(3) == 6);
+  REQUIRE(Factorial(10) == 3628800);
 }
