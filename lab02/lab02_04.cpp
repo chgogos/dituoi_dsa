@@ -1,3 +1,4 @@
+#include <algorithm> // for_each
 #include <iostream>
 #include <vector>
 
@@ -15,14 +16,18 @@ int main(int argc, char **argv) {
     cout << x << " ";
   cout << endl;
 
-  cout << "forward iteration with iterator: ";
+  cout << "forward iteration using iterator: ";
   vector<int>::iterator iter;
   for (iter = v.begin(); iter != v.end(); iter++)
     cout << *iter << " ";
   cout << endl;
 
-  cout << "backward iteration with iterator: ";
+  cout << "backward iteration using iterator: ";
   vector<int>::reverse_iterator riter;
   for (riter = v.rbegin(); riter != v.rend(); riter++)
     cout << *riter << " ";
+  cout << endl;
+
+  cout << "iteration using for_each and lambda expression: ";
+  for_each(v.begin(), v.end(), [](int i) { cout << i << " "; });
 }
