@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char *argv[]) {
   vector<int> v{5, 15, 20, 17, 11, 9};
   int sum = accumulate(v.begin(), v.end(), 0);
   cout << "Sum over vector using accumulate: " << sum << endl;

@@ -17,7 +17,7 @@ private:
   double height;
 };
 
-int main() {
+int main(int argc, char *argv[]) {
   list<Rectangle> rectangles = {{5,6},{3,3},{5,2},{6,1}};
 
   rectangles.sort([](const Rectangle &r1, const Rectangle &r2) {

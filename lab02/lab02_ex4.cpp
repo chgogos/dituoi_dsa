@@ -14,7 +14,7 @@ int hamming(string x, string y) {
   return c;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
   constexpr int N = 100;
   constexpr int L = 20;
   mt19937 mt(1821);

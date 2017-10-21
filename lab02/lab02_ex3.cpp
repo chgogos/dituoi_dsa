@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char *argv[]) {
   vector<string> v{"petros", "anna", "nikos"};
   sort(v.begin(), v.end());
   do {

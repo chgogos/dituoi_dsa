@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char *argv[]) {
   mt19937 mt(1821);
   uniform_int_distribution<int> dist(1, 10000);
   constexpr int N = 1000;

@@ -10,7 +10,7 @@ void print_vector(const string &name, const vector<int> &v) {
   cout << endl;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
   vector<int> v1;
   v1.push_back(5);
   v1.push_back(16);

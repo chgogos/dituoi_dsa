@@ -18,7 +18,7 @@ private:
   double height;
 };
 
-int main() {
+int main(int argc, char *argv[]) {
   list<Rectangle> rectangles;
   rectangles.push_back(Rectangle(5, 6));
   rectangles.push_back(Rectangle(3, 3));
