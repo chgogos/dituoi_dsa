@@ -2,7 +2,6 @@
 #include <iostream>
 #include <sstream>
 
-
 using namespace std;
 
 struct student {
@@ -11,8 +10,9 @@ struct student {
 };
 
 int main(int argc, char **argv) {
-  int N = 10, i = 0;
-  student students[10];
+  constexpr int N = 10; 
+  int i = 0;
+  student students[N];
   const char *fn = "data_student_struct10.txt";
   fstream filestr;
   string buffer;

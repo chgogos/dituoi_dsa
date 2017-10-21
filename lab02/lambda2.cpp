@@ -33,9 +33,17 @@ int main() {
       (*p) += x;
   };
 
+  cout << "Example1: capture by value (all external variables)" << endl;
   lambda1(1);
-  lambda2(1);
+  cout << "Example2: capture by reference (all external variables)" << endl;
+  lambda2(2);
+  cout << "Example3: mixed capture (v1 by value, v2 by reference)" << endl;
   lambda3(1);
+
+  cout << "v1: ";
+  for (int x : v1)
+    cout << x << " ";
+  cout << endl;
 
   cout << "v2: ";
   for (int x : v2)
