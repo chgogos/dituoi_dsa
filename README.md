@@ -8,11 +8,14 @@
 
 ### Εργαστήριο 2 - Εισαγωγή στα templates και στην STL (Standard Template Library), εισαγωγή στο TDD (Test Driven Development)
 
-Templates, STL containers, STL iterators, STL αλγόριθμοι, Test Driven Development στη C++ με τη βιβλιοθήκη [catch](https://github.com/philsquared/Catch).
+Templates, STL containers, STL iterators, STL αλγόριθμοι, lambdas, Test Driven Development στη C++ με τη βιβλιοθήκη [catch](https://github.com/philsquared/Catch).
 
 ### Εργαστήριο 3 - Αλγόριθμοι αναζήτησης και ταξινόμησης
 
+Μέτρηση χρόνου εκτέλεσης κώδικα, αλγόριθμοι ταξινόμησης (ταξινόμηση με εισαγγωή, ταξινόμηση με συγχώνευση, γρήγορη ταξινόμηση, ταξινόμηση κατάταξης), αλγόριθμοι αναζήτησης (σειριακή αναζήτηση, δυαδική αναζήτηση, αναζήτηση με παρεμβολή)
+
 ### Εργαστήριο 4 - Γραμμικές λίστες
+
 
 ### Εργαστήριο 5 - Στοίβες και ουρές
 
