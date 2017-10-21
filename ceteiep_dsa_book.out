@@ -1,0 +1,41 @@
+\BOOKMARK [0][-]{chapter.1}{Βασικές έννοιες στη C και στη C++}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Εισαγωγή}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Δείκτες}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Κλήση με τιμή και κλήση με αναφορά}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Πίνακες}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.4.1}{Μονοδιάστατοι πίνακες}{section.1.4}% 6
+\BOOKMARK [2][-]{subsection.1.4.2}{Δυναμικοί πίνακες}{section.1.4}% 7
+\BOOKMARK [2][-]{subsection.1.4.3}{Πίνακας ως παράμετρος συνάρτησης}{section.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.4.4}{Δισδιάστατοι πίνακες}{section.1.4}% 9
+\BOOKMARK [2][-]{subsection.1.4.5}{Πολυδιάστατοι πίνακες}{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.6}{Πριονωτοί πίνακες}{section.1.4}% 11
+\BOOKMARK [1][-]{section.1.5}{Δομές}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.6}{Κλάσεις - Αντικείμενα}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.7}{Αρχεία}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.7.1}{Εγγραφή και ανάγνωση δεδομένων από αρχείο με συναρτήσεις της C}{section.1.7}% 15
+\BOOKMARK [2][-]{subsection.1.7.2}{Εγγραφή και ανάγνωση δεδομένων από αρχείο με συναρτήσεις της C++}{section.1.7}% 16
+\BOOKMARK [1][-]{section.1.8}{Παραδείγματα}{chapter.1}% 17
+\BOOKMARK [2][-]{subsection.1.8.1}{Παράδειγμα 1}{section.1.8}% 18
+\BOOKMARK [2][-]{subsection.1.8.2}{Παράδειγμα 2}{section.1.8}% 19
+\BOOKMARK [2][-]{subsection.1.8.3}{Παράδειγμα 3}{section.1.8}% 20
+\BOOKMARK [2][-]{subsection.1.8.4}{Παράδειγμα 4}{section.1.8}% 21
+\BOOKMARK [1][-]{section.1.9}{Ασκήσεις}{chapter.1}% 22
+\BOOKMARK [0][-]{chapter.2}{Εισαγωγή στα templates και στην STL, TDD}{}% 23
+\BOOKMARK [1][-]{section.2.1}{Εισαγωγή}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.2}{Templates}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.3}{Η βιβλιοθήκη STL}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.3.1}{Containers}{section.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.3.2}{Iterators}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.3}{Αλγόριθμοι}{section.2.3}% 29
+\BOOKMARK [1][-]{section.2.4}{TDD=Test\040Driven\040Development}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.5}{Παραδείγματα}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.5.1}{Παράδειγμα 1}{section.2.5}% 32
+\BOOKMARK [2][-]{subsection.2.5.2}{Παράδειγμα 2}{section.2.5}% 33
+\BOOKMARK [2][-]{subsection.2.5.3}{Παράδειγμα 3}{section.2.5}% 34
+\BOOKMARK [0][-]{chapter.3}{Αλγόριθμοι ταξινόμησης και αναζήτησης}{}% 35
+\BOOKMARK [0][-]{chapter.4}{Γραμμικές λίστες}{}% 36
+\BOOKMARK [0][-]{chapter.5}{Στοίβες και ουρές}{}% 37
+\BOOKMARK [0][-]{chapter.6}{Σωροί}{}% 38
+\BOOKMARK [0][-]{chapter.7}{Κατακερματισμός}{}% 39
+\BOOKMARK [0][-]{chapter.8}{Δένδρα}{}% 40
+\BOOKMARK [0][-]{chapter.9}{Γραφήματα}{}% 41

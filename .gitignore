@@ -5,7 +5,7 @@
 *.blg
 *.hst
 *.log
-*.out
+# *.out
 *.synctex.gz
 *.toc
 *.ver

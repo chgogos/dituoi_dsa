@@ -1,0 +1,4 @@
+iteration using index: 23 13 31 17 56
+iteration using ranged based for: 23 13 31 17 56
+forward iteration using iterator: 23 13 31 17 56
+backward iteration using iterator: 56 17 31 13 23
