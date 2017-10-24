@@ -1,0 +1,24 @@
+Elapsed time binary-search	5000	20 milliseconds
+Elapsed time binary-search	10000	20 milliseconds
+Elapsed time binary-search	20000	22 milliseconds
+Elapsed time binary-search	40000	24 milliseconds
+Elapsed time binary-search	80000	31 milliseconds
+Elapsed time binary-search	160000	30 milliseconds
+Elapsed time binary-search	320000	35 milliseconds
+#####################################
+Elapsed time interpolation-search	5000	13 milliseconds
+Elapsed time interpolation-search	10000	14 milliseconds
+Elapsed time interpolation-search	20000	14 milliseconds
+Elapsed time interpolation-search	40000	15 milliseconds
+Elapsed time interpolation-search	80000	15 milliseconds
+Elapsed time interpolation-search	160000	17 milliseconds
+Elapsed time interpolation-search	320000	19 milliseconds
+#####################################
+Elapsed time STL-binary-search	5000	30 milliseconds
+Elapsed time STL-binary-search	10000	33 milliseconds
+Elapsed time STL-binary-search	20000	35 milliseconds
+Elapsed time STL-binary-search	40000	39 milliseconds
+Elapsed time STL-binary-search	80000	41 milliseconds
+Elapsed time STL-binary-search	160000	43 milliseconds
+Elapsed time STL-binary-search	320000	51 milliseconds
+#####################################

@@ -1,0 +1,32 @@
+Elapsed time insertion-sort	5000	46 milliseconds
+Elapsed time insertion-sort	10000	167 milliseconds
+Elapsed time insertion-sort	20000	658 milliseconds
+Elapsed time insertion-sort	40000	2595 milliseconds
+Elapsed time insertion-sort	80000	10377 milliseconds
+Elapsed time insertion-sort	160000	41441 milliseconds
+Elapsed time insertion-sort	320000	167593 milliseconds
+#####################################
+Elapsed time merge-sort	5000	1 milliseconds
+Elapsed time merge-sort	10000	3 milliseconds
+Elapsed time merge-sort	20000	7 milliseconds
+Elapsed time merge-sort	40000	14 milliseconds
+Elapsed time merge-sort	80000	32 milliseconds
+Elapsed time merge-sort	160000	60 milliseconds
+Elapsed time merge-sort	320000	125 milliseconds
+#####################################
+Elapsed time quick-sort	5000	1 milliseconds
+Elapsed time quick-sort	10000	3 milliseconds
+Elapsed time quick-sort	20000	5 milliseconds
+Elapsed time quick-sort	40000	10 milliseconds
+Elapsed time quick-sort	80000	24 milliseconds
+Elapsed time quick-sort	160000	47 milliseconds
+Elapsed time quick-sort	320000	105 milliseconds
+#####################################
+Elapsed time STL-sort	5000	1 milliseconds
+Elapsed time STL-sort	10000	2 milliseconds
+Elapsed time STL-sort	20000	4 milliseconds
+Elapsed time STL-sort	40000	8 milliseconds
+Elapsed time STL-sort	80000	17 milliseconds
+Elapsed time STL-sort	160000	37 milliseconds
+Elapsed time STL-sort	320000	79 milliseconds
+#####################################

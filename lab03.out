@@ -1,2 +1,17 @@
 \BOOKMARK [1][-]{section.1}{Εισαγωγή}{}% 1
-\BOOKMARK [1][-]{section.2}{ΧΧΧ}{}% 2
+\BOOKMARK [1][-]{section.2}{Εκτίμηση και μέτρηση του χρόνου εκτέλεσης κώδικα}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Μέτρηση χρόνου εκτέλεσης κώδικα με τη συνάρτηση clock\(\)}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Μέτρηση χρόνου εκτέλεσης κώδικα με τη χρήση του high_resolution_clock::time_point}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Αλγόριθμοι ταξινόμησης}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Ταξινόμηση με εισαγωγή}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Ταξινόμηση με συγχώνευση}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Γρήγορη ταξινόμηση}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Ταξινόμηση κατάταξης}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Αλγόριθμοι αναζήτησης}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Σειριακή αναζήτηση}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Δυαδική αναζήτηση}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{Αναζήτηση με παρεμβολή}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Παραδείγματα}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Παράδειγμα 1}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Παράδειγμα 2}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Ασκήσεις}{}% 17
