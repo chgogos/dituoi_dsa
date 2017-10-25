@@ -5,13 +5,9 @@ using namespace std;
 class Box {
 public:
   // constructor declaration with default values
-  Box(double l = 1, double w = 1, double h = 1) {
-    length = l;
-    width = w;
-    height = h;
-  };
+  Box(double l = 1, double w = 1, double h = 1);
   // member function
-  double volume() { return length * width * height; }
+  double volume();
 
 private:
   // member data
@@ -19,6 +15,11 @@ private:
   double width;
   double height;
 };
+
+// constructor using initializer list
+Box::Box(double l, double w, double h) : length(l), width(w), height(h) {}
+
+double Box::volume() { return length * width * height; }
 
 int main(int argc, char **argv) {
   Box b1(10, 5, 10);
