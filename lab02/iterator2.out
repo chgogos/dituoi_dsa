@@ -1,0 +1,15 @@
+Cities of Epirus using range for:
+arta 21895
+igoumenitsa 9145
+ioannina 65574
+preveza 19042
+Cities of Epirus using iterator:
+arta 21895
+igoumenitsa 9145
+ioannina 65574
+preveza 19042
+Cities of Epirus using reverse iterator:
+preveza 19042
+ioannina 65574
+igoumenitsa 9145
+arta 21895
