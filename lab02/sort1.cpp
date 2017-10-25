@@ -1,5 +1,7 @@
 #include <algorithm>
 #include <iostream>
+#include <random>
+#include <vector>
 
 using namespace std;
 
@@ -16,14 +18,26 @@ int main(int argc, char **argv) {
     cout << a[i] << " ";
   cout << endl;
 
-  cout << "BEFORE (vector example): ";
+  cout << "BEFORE (vector example 1): ";
   vector<int> va(a, a + 10);
-  auto rng = std::default_random_engine{};
+  auto rng = default_random_engine{};
   shuffle(va.begin(), va.end(), rng);
   for (auto it = va.begin(); it < va.end(); it++)
     cout << *it << " ";
   cout << endl;
   sort(va.begin(), va.end());
+  cout << "AFTER: ";
+  for (auto it = va.begin(); it < va.end(); it++)
+    cout << *it << " ";
+  cout << endl;
+
+  cout << "BEFORE (vector example 2): ";
+  shuffle(va.begin(), va.end(), rng);
+  for (auto it = va.begin(); it < va.end(); it++)
+    cout << *it << " ";
+  cout << endl;
+  // descending
+  sort(va.begin(), va.end(), greater<int>());
   cout << "AFTER: ";
   for (auto it = va.begin(); it < va.end(); it++)
     cout << *it << " ";
