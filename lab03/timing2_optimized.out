@@ -1,0 +1,19 @@
+g++ timing2.cpp -o timing2a -O0 -std=c++11
+./timing2a
+The sum is: 6.6666e+008
+Time elapsed: 537030 microseconds 0.53703 seconds
+
+g++ timing2.cpp -o timing2b -O1 -std=c++11
+./timing2b
+The sum is: 6.6666e+008
+Time elapsed: 125007 microseconds 0.125007 seconds
+
+g++ timing2.cpp -o timing2c -O2 -std=c++11
+./timing2c
+The sum is: 6.6666e+008
+Time elapsed: 127007 microseconds 0.127007 seconds
+
+g++ timing2.cpp -o timing2d -O3 -std=c++11
+./timing2d
+The sum is: 6.6666e+008
+Time elapsed: 114006 microseconds 0.114006 seconds
