@@ -11,7 +11,9 @@ public:
     cout << "Width:" << width << " Height:" << height << " Area "
          << this->area() << endl;
   }
-  bool operator<(const Rectangle &other) { return this->area() < other.area(); }
+  bool operator<(const Rectangle &other) const {
+    return this->area() < other.area();
+  }
 
 private:
   double width;
