@@ -1,0 +1,5 @@
+The size of the vector is 10
+7 11 11 11 15 16 16 18 21 45
+Enter a value to be searched for: 16
+Found using binary_search
+Found at positions 5 up to 6

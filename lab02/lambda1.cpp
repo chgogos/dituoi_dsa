@@ -11,7 +11,7 @@ int main() {
   cout << "Area = " << [](double x, double y) { return x * y; }(3.0, 4.5)
        << endl;
 
-  cout << "Example2: assign lambda function to variable" << endl;
+  cout << "Example2: assign lambda function to a variable" << endl;
   auto area = [](double x, double y) { return x * y; };
   cout << "Area = " << area(3.0, 4.5) << endl;
   cout << "Area = " << area(7.0, 5.5) << endl;
