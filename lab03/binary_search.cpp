@@ -19,15 +19,14 @@ template <class T> int binary_search(T a[], int n, T key) {
 // recursive implementation
 template <class T> int binary_search_r(T a[], int l, int r, T key) {
   int m = (l + r) / 2;
-  if (l > r) {
+  if (l > r)
     return -1;
-  } else if (a[m] == key) {
+  else if (a[m] == key)
     return m;
-  } else if (key < a[m]) {
+  else if (key < a[m])
     return binary_search_r(a, l, m - 1, key);
-  } else {
+  else
     return binary_search_r(a, m + 1, r, key);
-  }
 }
 
 template <class T> int binary_search_r(T a[], int n, T key) {

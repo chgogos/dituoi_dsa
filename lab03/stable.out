@@ -1,0 +1,12 @@
+ORIGINAL LIST:
+apostolis-5 nikos-5 petros-7 maria-2 kostas-5 giannis-5 sofia-1 dimitra-10 kiki-5 aristea-9 christos-7 niki-4 katerina-9 giorgos-8 lefteris-4 efthymios-10 iordanis-9 alexis-5 anna-5 georgia-4 
+INSERTION SORT:
+dimitra-10 efthymios-10 aristea-9 katerina-9 iordanis-9 giorgos-8 petros-7 christos-7 apostolis-5 nikos-5 kostas-5 giannis-5 kiki-5 alexis-5 anna-5 niki-4 lefteris-4 georgia-4 maria-2 sofia-1 
+MERGE SORT:
+efthymios-10 dimitra-10 iordanis-9 katerina-9 aristea-9 giorgos-8 christos-7 petros-7 anna-5 alexis-5 kiki-5 giannis-5 kostas-5 nikos-5 apostolis-5 georgia-4 lefteris-4 niki-4 maria-2 sofia-1 
+QUICK SORT:
+efthymios-10 dimitra-10 iordanis-9 aristea-9 katerina-9 giorgos-8 christos-7 petros-7 apostolis-5 anna-5 kostas-5 giannis-5 nikos-5 kiki-5 alexis-5 georgia-4 niki-4 lefteris-4 maria-2 sofia-1 
+STL SORT:
+efthymios-10 dimitra-10 iordanis-9 katerina-9 aristea-9 giorgos-8 petros-7 christos-7 nikos-5 anna-5 alexis-5 kiki-5 giannis-5 kostas-5 apostolis-5 niki-4 lefteris-4 georgia-4 maria-2 sofia-1 
+STL STABLESORT:
+dimitra-10 efthymios-10 aristea-9 katerina-9 iordanis-9 giorgos-8 petros-7 christos-7 apostolis-5 nikos-5 kostas-5 giannis-5 kiki-5 alexis-5 anna-5 niki-4 lefteris-4 georgia-4 maria-2 sofia-1 

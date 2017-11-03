@@ -1,0 +1,9 @@
+apostolis 5
+nikos   5
+petros  7
+kostas  5
+giannis 5
+sofia   1
+dimitra 10
+efthymios 10
+anna 5
