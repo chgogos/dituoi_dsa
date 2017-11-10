@@ -10,6 +10,11 @@
 *.toc
 *.ver
 *.xml
+ceteiep_dsa_book.out
+ceteiep_dsa_book_part-A.out
+lab01.out
+lab02.out
+lab03.out
 
 # Visual Studio Code
 .vscode 

@@ -6,7 +6,7 @@ using namespace std;
 struct Rectangle {
   double width;
   double height;
-  bool operator<(Rectangle other) {
+  bool operator<(const Rectangle &other) const {
     return width * height < other.width * other.height;
   }
 };
