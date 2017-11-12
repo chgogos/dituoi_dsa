@@ -1,0 +1,12 @@
+swap integers
+BEFORE:
+x=5 y=7
+AFTER:
+x=7 y=5
+swap records
+BEFORE:
+student1=nikos-5.5
+student2=maria-7.5
+AFTER:
+student1=maria-7.5
+student2=nikos-5.5
