@@ -1,0 +1,104 @@
+Testing static list
+########################################################
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 40000
+Time elapsed: 36002 microseconds
+Total balance for customers having name starting with character A is 3871562
+Time elapsed: 1000 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 41552
+Time elapsed: 657037 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 39921
+Time elapsed: 680038 microseconds
+########################################################
+Testing linked list
+########################################################
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 40000
+Time elapsed: 3941225 microseconds
+Total balance for customers having name starting with character A is 3871562
+Time elapsed: 1000 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 41552
+Time elapsed: 1000 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 39921
+Time elapsed: 4398251 microseconds
+########################################################
+Testing stl vector
+########################################################
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 40000
+Time elapsed: 32001 microseconds
+Total balance for customers having name starting with character A is 3871562
+Time elapsed: 1000 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 41552
+Time elapsed: 561032 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 39921
+Time elapsed: 529030 microseconds
+########################################################
+Testing stl list
+########################################################
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 40000
+Time elapsed: 33001 microseconds
+Total balance for customers having name starting with character A is 3871562
+Time elapsed: 1000 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 41552
+Time elapsed: 2000 microseconds
+GGFSICRZWW - 2722
+UBKZNBPWLH - 4019
+UPIHSBIIBS - 3896
+JRQVGHLTNM - 395
+LUWYTFTNFJ - 784
+SIZE 39921
+Time elapsed: 2000 microseconds
+########################################################

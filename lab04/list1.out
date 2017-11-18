@@ -1,0 +1,12 @@
+#1. Add items 10, 20 and 30
+List: 10 20 30
+#2. Insert at position 1 item 15
+List: 10 15 20 30
+#3. Delete item at position 0
+List: 15 20 30
+#4. Item at position 2: 30
+Exception: the index is out of range
+#6. Search for item 20: 1
+#7. Search for item 21: -1
+#8. Append item 99 until full list exception occurs
+Exception: full list exception
