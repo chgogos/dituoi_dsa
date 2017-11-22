@@ -1,0 +1,44 @@
+Testing static list
+########################################################
+LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
+A(random customers generation). Time elapsed: 31001 microseconds 0.031 seconds
+Total balance for customers having name starting with character A is 3871562
+B(total balance for customers having name starting with A). Time elapsed: 1000 microseconds 0.001 seconds
+LIST SIZE=41548: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+C(insert new customers). Time elapsed: 650037 microseconds 0.65 seconds
+LIST SIZE=39928: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+D(remove customers). Time elapsed: 676038 microseconds 0.676 seconds
+########################################################
+Testing linked list
+########################################################
+LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
+A(random customers generation). Time elapsed: 30001 microseconds 0.03 seconds
+Total balance for customers having name starting with character A is 3871562
+B(total balance for customers having name starting with A). Time elapsed: 0 microseconds 0 seconds
+LIST SIZE=41548: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+C(insert new customers). Time elapsed: 2000 microseconds 0.002 seconds
+LIST SIZE=39928: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+D(remove customers). Time elapsed: 1000 microseconds 0.001 seconds
+########################################################
+Testing stl vector
+########################################################
+LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
+A(random customers generation). Time elapsed: 30001 microseconds 0.03 seconds
+Total balance for customers having name starting with character A is 3871562
+B(total balance for customers having name starting with A). Time elapsed: 1000 microseconds 0.001 seconds
+LIST SIZE=41548: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+C(insert new customers). Time elapsed: 540030 microseconds 0.54 seconds
+LIST SIZE=39928: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+D(remove customers). Time elapsed: 522029 microseconds 0.522 seconds
+########################################################
+Testing stl list
+########################################################
+LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
+A(random customers generation). Time elapsed: 31001 microseconds 0.031 seconds
+Total balance for customers having name starting with character A is 3871562
+B(total balance for customers having name starting with A). Time elapsed: 1000 microseconds 0.001 seconds
+LIST SIZE=41548: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+C(insert new customers). Time elapsed: 2000 microseconds 0.002 seconds
+LIST SIZE=39928: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+D(remove customers). Time elapsed: 1000 microseconds 0.001 seconds
+########################################################
