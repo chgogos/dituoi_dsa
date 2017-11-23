@@ -1,39 +1,29 @@
-1. Show list
-2. Insert item (back)
-3. Insert item (at position)
-4. Delete item (from position)
-5. Delete all items having value
-6. Exit
-Enter choice: 2
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:2
 Enter value:10
-1. Show list
-2. Insert item (back)
-3. Insert item (at position)
-4. Delete item (from position)
-5. Delete all items having value
-6. Exit
-Enter choice: 2
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:2
 Enter value:20
-1. Show list
-2. Insert item (back)
-3. Insert item (at position)
-4. Delete item (from position)
-5. Delete all items having value
-6. Exit
-Enter choice: 3
-Enter position and value:1 30
-1. Show list
-2. Insert item (back)
-3. Insert item (at position)
-4. Delete item (from position)
-5. Delete all items having value
-6. Exit
-Enter choice: 1
-List: 10 30 20
-1. Show list
-2. Insert item (back)
-3. Insert item (at position)
-4. Delete item (from position)
-5. Delete all items having value
-6. Exit
-Enter choice: 6
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:2
+Enter value:20
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:3
+Enter position and value:1 15
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:1
+List: 10 15 20 20
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:4
+Enter position:0
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:1
+List: 15 20 20
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:5
+Enter value:20
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:1
+List: 15
+1.Show list-2.Insert item (back)-3.Insert item (at position)-4.Delete item (from position)-5.Delete all items having value-6.Exit
+Enter choice:6

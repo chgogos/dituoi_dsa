@@ -52,7 +52,7 @@
 
 
 \subsection{Γραμμικές λίστες της STL}
-Τα containers της STL που μπορούν να λειτουργήσουν ως διατεταγμένες συλλογές (ordered collections) είναι τα ακόλουθα: vector, deque, arrays, list και forward\_list. 
+Τα containers της STL που μπορούν να λειτουργήσουν ως διατεταγμένες συλλογές (ordered collections) είναι τα ακόλουθα: vector, deque, arrays, list, forward\_list και bitset. 
 
 \subsubsection{Vectors}
 Τα vectors αλλάζουν αυτόματα μέγεθος καθώς προστίθενται ή αφαιρούνται στοιχεία σε αυτά. Τα δεδομένα τους τοποθετούνται σε συνεχόμενες θέσεις μνήμης. Περισσότερες πληροφορίες για τα vectors μπορούν να βρεθούν στην αναφορά \cite{g4gvector}.
@@ -68,6 +68,10 @@
 
 \subsubsection{Forward Lists}
 Οι forward lists είναι απλά συνδεδεμένες λίστες με κάθε κόμβο να διαθέτει έναν δείκτη προς το επόμενο στοιχείο της λίστας. Περισσότερες πληροφορίες για τις forward lists μπορούν να βρεθούν στις αναφορές \cite{g4gforwardlist1}, \cite{g4gforwardlist2}.
+
+\subsubsection{Bitset}
+Τα bitsets είναι πίνακες με λογικές τιμές τις οποίες αποθηκεύουν με αποδοτικό τρόπο καθώς για κάθε λογική τιμή απαιτείται μόνο 1 bit. Το μέγεθος ενός bitset πρέπει να είναι γνωστό κατά τη μεταγλώττιση. Μια ιδιαιτερότητά του είναι ότι οι δείκτες θέσης που χρησιμοποιούνται για την αναφορά στα στοιχεία του ξεκινούν την αρίθμησή τους με το μηδέν από δεξιά και αυξάνονται προς τα αριστερά. Για παράδειγμα ένα bitset με τιμές 101011 έχει την τιμή 1 στις θέσεις 0,1,3,5 και 0 στις θέσεις 2 και 4. Περισσότερες πληροφορίες για τα bitsets μπορούν να βρεθούν στις αναφορές \cite{g4gbitset1}, \cite{g4gbitset2}.
+
 
 \section{Παραδείγματα}
 \subsection{Παράδειγμα 1}
@@ -141,5 +145,9 @@ Geeks for Geeks, List in C++ STL  \href{http://www.geeksforgeeks.org/list-cpp-st
 Geeks for Geeks, Forward List in C++ (Set 1) \href{http://www.geeksforgeeks.org/forward-list-c-set-1-introduction-important-functions/}{http://www.geeksforgeeks.org/forward-list-c-set-1-introduction-important-functions/}
 \bibitem{g4gforwardlist2}
 Geeks for Geeks, Forward List in C++ (Set 2) \href{http://www.geeksforgeeks.org/forward-list-c-set-2-manipulating-functions/}{http://www.geeksforgeeks.org/forward-list-c-set-2-manipulating-functions/}
+\bibitem{g4gbitset1}
+Geeks for Geeks, C++ bitset and its application, \href{http://www.geeksforgeeks.org/c-bitset-and-its-application/}{http://www.geeksforgeeks.org/c-bitset-and-its-application/}
+\bibitem{g4gbitset2}
+Geeks for Geeks, C++ bitset interesting facts, \href{http://www.geeksforgeeks.org/c-bitset-interesting-facts/}{http://www.geeksforgeeks.org/c-bitset-interesting-facts/}
 \end{thebibliography}
 

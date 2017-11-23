@@ -7,13 +7,13 @@ int main(int argc, char **argv) {
   linked_list<int> alist;
   int choice, position, value;
   do {
-    cout << "1. Show list" << endl;
-    cout << "2. Insert item (back)" << endl;
-    cout << "3. Insert item (at position)" << endl;
-    cout << "4. Delete item (from position)" << endl;
-    cout << "5. Delete all items having value" << endl;
-    cout << "6. Exit" << endl;
-    cout << "Enter choice: ";
+    cout << "1.Show list" << "-";
+    cout << "2.Insert item (back)" << "-";
+    cout << "3.Insert item (at position)" << "-";
+    cout << "4.Delete item (from position)" << "-";
+    cout << "5.Delete all items having value" << "-";
+    cout << "6.Exit" << endl;
+    cout << "Enter choice:";
     cin >> choice;
     if (choice < 1 || choice > 6) {
       cerr << "Choice should be 1 to 5" << endl;
