@@ -1,0 +1,7 @@
+#### Test heap construction with heapify ####
+heapify 53 HEAP(10) [42 37 31 16 53 19 47 58 33 25]
+heapify 16 HEAP(10) [42 37 31 58 53 19 47 16 33 25]
+heapify 31 HEAP(10) [42 37 47 58 53 19 31 16 33 25]
+heapify 37 HEAP(10) [42 58 47 37 53 19 31 16 33 25]
+heapify 42 HEAP(10) [58 53 47 37 42 19 31 16 33 25]
+HEAP(10) [58 53 47 37 42 19 31 16 33 25]

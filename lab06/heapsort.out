@@ -1,0 +1,5 @@
+SIZE 10000 heap sort 4.0003ms std::sort 4.0003ms
+SIZE 20000 heap sort 5.0003ms std::sort 4.0002ms
+SIZE 40000 heap sort 10.0006ms std::sort 10.0006ms
+SIZE 80000 heap sort 19.0011ms std::sort 18.001ms
+SIZE 100000 heap sort 24.0014ms std::sort 22.0013ms
