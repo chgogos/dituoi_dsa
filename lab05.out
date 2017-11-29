@@ -1,5 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Εισαγωγή}{}% 1
 \BOOKMARK [1][-]{section.2}{Στοίβα}{}% 2
 \BOOKMARK [1][-]{section.3}{Ουρά}{}% 3
-\BOOKMARK [1][-]{section.4}{Παραδείγματα}{}% 4
-\BOOKMARK [1][-]{section.5}{Ασκήσεις}{}% 5
+\BOOKMARK [1][-]{section.4}{Οι δομές στοίβα και ουρά στην STL}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{std::stack}{section.4}% 5
+\BOOKMARK [1][-]{section.5}{Παραδείγματα}{}% 6
+\BOOKMARK [1][-]{section.6}{Ασκήσεις}{}% 7
