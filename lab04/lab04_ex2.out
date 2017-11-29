@@ -1,11 +1,14 @@
 Testing linked list
 ########################################################
-LIST SIZE=100000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
-A(random customers generation). Time elapsed: 88005 microseconds 0.088 seconds
-Total balance for customers having name starting with character A is 9788898
-B(total balance for customers having name starting with A). Time elapsed: 3000 microseconds 0.003 seconds
-LIST SIZE=103904: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
-C(insert new customers). Time elapsed: 3000 microseconds 0.003 seconds
-LIST SIZE=99874: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
-D(remove customers). Time elapsed: 2000 microseconds 0.002 seconds
+LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
+A(random customers generation). Time elapsed: 37002 microseconds 0.037 seconds
 ########################################################
+Total balance for customers having name starting with character A is 3871562
+LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
+B(total balance for customers having name starting with A). Time elapsed: 1000 microseconds 0.001 seconds
+########################################################
+LIST SIZE=41548: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
+C(insert new customers). Time elapsed: 1000 microseconds 0.001 seconds
+########################################################
+LIST SIZE=43159: GGFSICRZWW - 2722 WWZRCISFGG - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 
+D(remove customers). Time elapsed: 1000 microseconds 0.001 seconds

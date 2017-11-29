@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
     cout << "Enter choice:";
     cin >> choice;
     if (choice < 1 || choice > 6) {
-      cerr << "Choice should be 1 to 5" << endl;
+      cerr << "Choice should be 1 to 6" << endl;
       continue;
     }
     try {

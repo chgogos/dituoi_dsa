@@ -1,3 +1,6 @@
+/**
+ * Code including alternative (but slower) implementations for some methods
+ **/
 #include "linked_list.cpp"
 #include <algorithm>
 #include <chrono>
@@ -45,6 +48,16 @@ void generate_data_linked_list(linked_list<customer> &linked_list, int N) {
     current->next = next_customer;
     current = next_customer;
     linked_list.size++;
+  }
+}
+
+// slower alternative for data generation
+void generate_data_linked_list_alt(linked_list<customer> &linked_list, int N) {
+  for (int i = 0; i < N; i++) {
+    customer c;
+    c.name = generate_random_name(10);
+    c.balance = uni1(*mt);
+    push_back(linked_list, c);
   }
 }
 
@@ -124,31 +137,61 @@ void remove_customers_linked_list(linked_list<customer> &linked_list, char c) {
   }
 }
 
+// slower alternative for customer removal
+void remove_customers_linked_list_alt(linked_list<customer> &linked_list,
+                                      char c) {
+  int i = 0;
+  while (i < linked_list.size) {
+    struct customer cu = access(linked_list, i);
+    if (cu.name.at(0) == c)
+      delete_item(linked_list, i);
+    else
+      i++;
+  }
+}
+
 int main(int argc, char **argv) {
   long seed = 1940;
   mt = new mt19937(seed);
   cout << "Testing linked list" << endl;
+  cout << "########################################################" << endl;
   struct linked_list<customer> linked_list;
-  string msgs[] = {"A(random customers generation)",
-                   "B(total balance for customers having name starting with A)",
-                   "C(insert new customers)", "D(remove customers)"};
-  for (int i = 0; i < 4; i++) {
-    cout << "########################################################" << endl;
-    auto t1 = high_resolution_clock::now();
-    if (i == 0) {
-      generate_data_linked_list(linked_list, 40000);
-    } else if (i == 1)
-      total_balance_linked_list(linked_list, 'A');
-    else if (i == 2) {
-      add_extra_customers_linked_list(linked_list, 'G');
-    } else if (i == 3) {
-      add_extra_customers_linked_list(linked_list, 'G');
-    }
-    auto t2 = high_resolution_clock::now();
-    auto duration = duration_cast<microseconds>(t2 - t1).count();
-    print_customers_linked_list(linked_list, 5);
-    cout << msgs[i] << ". Time elapsed: " << duration << " microseconds "
-         << setprecision(3) << duration / 1000000.0 << " seconds" << endl;
-  }
+  auto t1 = high_resolution_clock::now();
+  generate_data_linked_list(linked_list, 40000);
+  // generate_data_linked_list_alt(linked_list, 40000);
+  auto t2 = high_resolution_clock::now();
+  print_customers_linked_list(linked_list, 5);
+  auto duration = duration_cast<microseconds>(t2 - t1).count();
+  cout << "A(random customers generation). Time elapsed: " << duration
+       << " microseconds " << setprecision(3) << duration / 1000000.0
+       << " seconds" << endl;
+
+  t1 = high_resolution_clock::now();
+  total_balance_linked_list(linked_list, 'A');
+  t2 = high_resolution_clock::now();
+  duration = duration_cast<microseconds>(t2 - t1).count();
+  cout << "B(total balance for customers having name starting with A). Time "
+          "elapsed: "
+       << duration << " microseconds " << setprecision(3)
+       << duration / 1000000.0 << " seconds" << endl;
+
+  t1 = high_resolution_clock::now();
+  add_extra_customers_linked_list(linked_list, 'G');
+  t2 = high_resolution_clock::now();
+  print_customers_linked_list(linked_list, 5);
+  duration = duration_cast<microseconds>(t2 - t1).count();
+  cout << "C(insert new customers). Time elapsed: " << duration
+       << " microseconds " << setprecision(3) << duration / 1000000.0
+       << " seconds" << endl;
+
+  t1 = high_resolution_clock::now();
+  remove_customers_linked_list(linked_list, 'B');
+  // remove_customers_linked_list_alt(linked_list, 'B');
+  t2 = high_resolution_clock::now();
+  print_customers_linked_list(linked_list, 5);
+  duration = duration_cast<microseconds>(t2 - t1).count();
+  cout << "D(remove customers). Time elapsed: " << duration << " microseconds "
+       << setprecision(3) << duration / 1000000.0 << " seconds" << endl;
+  cout << "########################################################" << endl;
   delete mt;
 }
