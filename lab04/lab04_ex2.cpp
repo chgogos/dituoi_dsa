@@ -14,32 +14,32 @@ mt19937 *mt;
 uniform_int_distribution<int> uni1(0, 5000), uni2(0, 25);
 
 struct customer {
-  string name;
+  string code;
   int balance;
-  bool operator<(customer other) { return name < other.name; }
+  bool operator<(customer other) { return code < other.code; }
 };
 
-string generate_random_name(int k) {
-  string name{};
+string generate_random_code(int k) {
+  string code{};
   string letters_en("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
   for (int j = 0; j < k; j++) {
     char c{letters_en[uni2(*mt)]};
-    name += c;
+    code += c;
   }
-  return name;
+  return code;
 }
 
 void generate_data_linked_list(linked_list<customer> &linked_list, int N) {
   struct node<customer> *current, *next_customer;
   current = new node<customer>();
-  current->data.name = generate_random_name(10);
+  current->data.code = generate_random_code(10);
   current->data.balance = uni1(*mt);
   current->next = NULL;
   linked_list.head = current;
   linked_list.size++;
   for (int i = 1; i < N; i++) {
     next_customer = new node<customer>();
-    next_customer->data.name = generate_random_name(10);
+    next_customer->data.code = generate_random_code(10);
     next_customer->data.balance = uni1(*mt);
     next_customer->next = NULL;
     current->next = next_customer;
@@ -52,7 +52,7 @@ void print_customers_linked_list(linked_list<customer> &linked_list, int k) {
   cout << "LIST SIZE=" << linked_list.size << ": ";
   for (int i = 0; i < k; i++) {
     customer cu = access(linked_list, i);
-    cout << cu.name << " - " << cu.balance << " ";
+    cout << cu.code << " - " << cu.balance << " ";
   }
   cout << endl;
 }
@@ -64,12 +64,12 @@ void total_balance_linked_list(linked_list<customer> &linked_list, char c) {
   int sum = 0;
   while (ptr != NULL) {
     customer cu = ptr->data;
-    if (cu.name.at(0) == c)
+    if (cu.code.at(0) == c)
       sum += cu.balance;
     ptr = ptr->next;
     i++;
   }
-  cout << "Total balance for customers having name starting with character "
+  cout << "Total balance for customers having code starting with character "
        << c << " is " << sum << endl;
 }
 
@@ -78,10 +78,10 @@ void add_extra_customers_linked_list(linked_list<customer> &linked_list,
   struct node<customer> *ptr = linked_list.head;
   while (ptr != NULL) {
     customer cu = ptr->data;
-    if (cu.name.at(0) == c) {
+    if (cu.code.at(0) == c) {
       customer ncu;
-      ncu.name = cu.name;
-      reverse(ncu.name.begin(), ncu.name.end());
+      ncu.code = cu.code;
+      reverse(ncu.code.begin(), ncu.code.end());
       ncu.balance = cu.balance;
       struct node<customer> *new_node = new node<customer>();
       new_node->data = ncu;
@@ -98,7 +98,7 @@ void remove_customers_linked_list(linked_list<customer> &linked_list, char c) {
   struct node<customer> *ptr1;
   while (linked_list.size > 0) {
     customer cu = linked_list.head->data;
-    if (cu.name.at(0) == c) {
+    if (cu.code.at(0) == c) {
       ptr1 = linked_list.head;
       linked_list.head = ptr1->next;
       delete ptr1;
@@ -112,7 +112,7 @@ void remove_customers_linked_list(linked_list<customer> &linked_list, char c) {
   struct node<customer> *ptr2 = ptr1->next;
   while (ptr2 != NULL) {
     customer cu = ptr2->data;
-    if (cu.name.at(0) == c) {
+    if (cu.code.at(0) == c) {
       ptr1->next = ptr2->next;
       delete (ptr2);
       ptr2 = ptr1->next;
@@ -130,7 +130,7 @@ int main(int argc, char **argv) {
   cout << "Testing linked list" << endl;
   struct linked_list<customer> linked_list;
   string msgs[] = {"A(random customers generation)",
-                   "B(total balance for customers having name starting with A)",
+                   "B(total balance for customers having code starting with A)",
                    "C(insert new customers)", "D(remove customers)"};
   for (int i = 0; i < 4; i++) {
     cout << "########################################################" << endl;
@@ -142,7 +142,7 @@ int main(int argc, char **argv) {
     else if (i == 2) {
       add_extra_customers_linked_list(linked_list, 'G');
     } else if (i == 3) {
-      add_extra_customers_linked_list(linked_list, 'G');
+      remove_customers_linked_list(linked_list, 'B');
     }
     auto t2 = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(t2 - t1).count();

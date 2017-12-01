@@ -1,14 +1,11 @@
 Testing linked list
 ########################################################
 LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
-A(random customers generation). Time elapsed: 39002 microseconds 0.039 seconds
-########################################################
+A(random customers generation). Time elapsed: 45002 microseconds 0.045 seconds
 Total balance for customers having code starting with character A is 3871562
-LIST SIZE=40000: GGFSICRZWW - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 LUWYTFTNFJ - 784 
-B(total balance for customers having code starting with A). Time elapsed: 1000 microseconds 0.001 seconds
-########################################################
+B(total balance for customers having  starting with A). Time elapsed: 1000 microseconds 0.001 seconds
 LIST SIZE=41548: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
 C(insert new customers). Time elapsed: 2000 microseconds 0.002 seconds
-########################################################
 LIST SIZE=39928: GGFSICRZWW - 2722 WWZRCISFGG - 2722 UBKZNBPWLH - 4019 UPIHSBIIBS - 3896 JRQVGHLTNM - 395 
 D(remove customers). Time elapsed: 1000 microseconds 0.001 seconds
+########################################################

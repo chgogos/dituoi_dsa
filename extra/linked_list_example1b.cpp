@@ -6,7 +6,7 @@ struct node {
   struct node *next;
 };
 
-// C++ style (usingv references)
+// C++ style (using references)
 void push_front(struct node *&head, int data) {
   struct node *new_node = new node();
   new_node->data = data;
