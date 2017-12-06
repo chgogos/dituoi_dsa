@@ -12,15 +12,16 @@ void clear_heap() {
   heap_size = 0;
 }
 
-void print_heap() {
+void print_heap(bool newline = true) {
   cout << "HEAP(" << heap_size << ") [";
-  for (int i = 1; i <= heap_size; i++) {
+  for (int i = 1; i <= heap_size; i++)
     if (i == heap_size)
       cout << heap[i];
     else
       cout << heap[i] << " ";
-  }
-  cout << "]" << endl;
+  cout << "]";
+  if (newline)
+    cout << endl;
 }
 
 void heapify(int k) {
@@ -54,7 +55,9 @@ void heap_bottom_up(int *a, int N, bool verbose = false) {
   }
 }
 
-void insert_key(int key) {
+int top() { return heap[1]; }
+
+void push(int key) {
   heap_size++;
   heap[heap_size] = key;
   int pos = heap_size;
@@ -64,7 +67,7 @@ void insert_key(int key) {
   }
 }
 
-void maximum_key_deletion() {
+void pop() {
   swap(heap[1], heap[heap_size]);
   heap_size--;
   heapify(1);
