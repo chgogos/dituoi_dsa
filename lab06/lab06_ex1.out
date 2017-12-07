@@ -1,1 +1,6 @@
-Moving medians sum = 54441518145.50 elapsed time 132.52ms
+A. Top item: 999994
+Time elapsed (heap_bottom_up): 3000.2 microseconds 
+B. Top item: 999994
+Time elapsed (push): 6000.4 microseconds 
+C. Top item: 999994
+Time elapsed (push): 11000.6 microseconds 
