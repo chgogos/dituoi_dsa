@@ -55,6 +55,10 @@ void heap_bottom_up(int *a, int N, bool verbose = false) {
   }
 }
 
+bool empty() {
+  return (heap_size==0);
+}
+
 int top() { return heap[1]; }
 
 void push(int key) {

@@ -6,8 +6,8 @@
 using namespace std::chrono;
 
 void heapsort() {
-  while (heap_size > 0)
-    maximum_key_deletion();
+  while (!empty())
+    pop();
 }
 
 int main(void) {
