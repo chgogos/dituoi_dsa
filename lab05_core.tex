@@ -20,7 +20,8 @@
 \lstinputlisting[style=DOS]{lab05/queue_oo.out}
 
 \section{Οι δομές στοίβα και ουρά στην STL}
-Οι δομές std::stack και std::queue έχουν υλοποιηθεί στην STL ως container adaptors δηλαδή κλάσεις που χρησιμοποιούν εσωτερικά ένα άλλο container και παρέχουν ένα συγκεκριμένο σύνολο από λειτουργίες που επιτρέπουν την προσπέλαση και την τροποποίηση των στοιχείων τους. Το εσωτερικό container μπορεί να είναι κάποιο από τα containers της STL: vector, list, dequeue ή οποιοδήποτε container που υποστηρίζει τις λειτουργίες: empty, size, back, push\_back και pop\_back.
+Οι δομές std::stack και std::queue έχουν υλοποιηθεί στην STL ως container adaptors δηλαδή κλάσεις που χρησιμοποιούν εσωτερικά ένα άλλο container και παρέχουν ένα συγκεκριμένο σύνολο από λειτουργίες που επιτρέπουν την προσπέλαση και την τροποποίηση των στοιχείων τους. 
+
 \subsection{std::stack}
 Τυπικές λειτουργίες που παρέχει η std::stack είναι οι ακόλουθες:
 \begin{itemize}[noitemsep]
@@ -41,7 +42,7 @@
 
 
 \subsection{std::queue}
-Τυπικές λειτουργίες που παρέχει η std::queue είναι οι ακόλουθες:
+Στην περίπτωση του std::queue το εσωτερικό container μπορεί να είναι κάποιο από τα containers std::vector, std::list, std::dequeue ή οποιοδήποτε container που υποστηρίζει τις λειτουργίες empty, size, front, back, push\_back και pop\_front. Τυπικές λειτουργίες που παρέχει η std::queue είναι οι ακόλουθες:
 \begin{itemize}[noitemsep]
 \item empty, ελέγχει αν η ουρά είναι άδεια.
 \item size, επιστρέφει το μέγεθος της ουράς.

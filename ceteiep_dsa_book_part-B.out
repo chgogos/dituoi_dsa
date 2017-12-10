@@ -1,0 +1,32 @@
+\BOOKMARK [0][-]{chapter.4}{Γραμμικές λίστες, λίστες της STL}{}% 1
+\BOOKMARK [1][-]{section.4.1}{Εισαγωγή}{chapter.4}% 2
+\BOOKMARK [1][-]{section.4.2}{Γραμμικές λίστες}{chapter.4}% 3
+\BOOKMARK [2][-]{subsection.4.2.1}{Στατικές γραμμικές λίστες}{section.4.2}% 4
+\BOOKMARK [2][-]{subsection.4.2.2}{Συνδεδεμένες γραμμικές λίστες}{section.4.2}% 5
+\BOOKMARK [2][-]{subsection.4.2.3}{Γραμμικές λίστες της STL}{section.4.2}% 6
+\BOOKMARK [1][-]{section.4.3}{Παραδείγματα}{chapter.4}% 7
+\BOOKMARK [2][-]{subsection.4.3.1}{Παράδειγμα 1}{section.4.3}% 8
+\BOOKMARK [2][-]{subsection.4.3.2}{Παράδειγμα 2}{section.4.3}% 9
+\BOOKMARK [1][-]{section.4.4}{Ασκήσεις}{chapter.4}% 10
+\BOOKMARK [0][-]{chapter.5}{Στοίβες και ουρές, οι δομές στοίβα και ουρά στην STL}{}% 11
+\BOOKMARK [1][-]{section.5.1}{Εισαγωγή}{chapter.5}% 12
+\BOOKMARK [1][-]{section.5.2}{Στοίβα}{chapter.5}% 13
+\BOOKMARK [1][-]{section.5.3}{Ουρά}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.4}{Οι δομές στοίβα και ουρά στην STL}{chapter.5}% 15
+\BOOKMARK [2][-]{subsection.5.4.1}{std::stack}{section.5.4}% 16
+\BOOKMARK [2][-]{subsection.5.4.2}{std::queue}{section.5.4}% 17
+\BOOKMARK [1][-]{section.5.5}{Παραδείγματα}{chapter.5}% 18
+\BOOKMARK [2][-]{subsection.5.5.1}{Παράδειγμα 1}{section.5.5}% 19
+\BOOKMARK [2][-]{subsection.5.5.2}{Παράδειγμα 2}{section.5.5}% 20
+\BOOKMARK [1][-]{section.5.6}{Ασκήσεις}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{Σωροί μεγίστων και σωροί ελαχίστων, η ταξινόμηση heapsort, ουρές προτεραιότητας στην STL}{}% 22
+\BOOKMARK [1][-]{section.6.1}{Εισαγωγή}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.2}{Σωροί}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.3}{Υλοποίηση ενός σωρού}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.4}{Ταξινόμηση Heapsort}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.5}{Η δομή priority_queue της STL}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.6}{Παραδείγματα}{chapter.6}% 28
+\BOOKMARK [2][-]{subsection.6.6.1}{Παράδειγμα 1}{section.6.6}% 29
+\BOOKMARK [2][-]{subsection.6.6.2}{Παράδειγμα 2}{section.6.6}% 30
+\BOOKMARK [2][-]{subsection.6.6.3}{Παράδειγμα 3}{section.6.6}% 31
+\BOOKMARK [1][-]{section.6.7}{Ασκήσεις}{chapter.6}% 32

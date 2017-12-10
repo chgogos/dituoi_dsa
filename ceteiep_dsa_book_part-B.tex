@@ -1,0 +1,37 @@
+\documentclass[11pt,a4paper]{book}
+
+% bibliography on the same page
+% https://tex.stackexchange.com/questions/74296/to-have-no-pagebreak-before-bibliography
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+\usepackage{ceteiep_dsa_notes_whitebg}
+
+\addto\captionsgreek{\renewcommand{\chaptername}{Εργαστήριο}}
+
+\title{Δομές Δεδομένων και Αλγόριθμοι \\ ΜΕΡΟΣ B' \\ Εργαστήριο (C++)\\ Τ.Ε.Ι. Ηπείρου - Τμήμα Μηχανικών Πληροφορικής Τ.Ε.}
+\author{Χρήστος Γκόγκος }
+\date{Άρτα - 2017}
+
+\begin{document}
+% \frontmatter
+\maketitle
+% \tableofcontents
+\mainmatter
+
+\setcounter{chapter}{3} 
+% Εργαστήριο 4
+\chapter{Γραμμικές λίστες, λίστες της STL}
+\input{lab04_core}
+
+% Εργαστήριο 5
+\chapter{Στοίβες και ουρές, οι δομές στοίβα και ουρά στην STL}
+\input{lab05_core}
+
+% Εργαστήριο 6
+\chapter{Σωροί μεγίστων και σωροί ελαχίστων, η ταξινόμηση heapsort, ουρές προτεραιότητας στην STL}
+\chaptermark{Σωροί μεγίστων, ελαχίστων, heapsort, std::priority\_queue}
+\input{lab06_core}
+
+\end{document}
+
