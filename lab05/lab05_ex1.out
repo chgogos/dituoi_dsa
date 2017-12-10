@@ -1,0 +1,10 @@
+$ lab05_ex1
+Usage examples:
+                 lab05_ex1 SOFOS
+                 lab05_ex1 "A MAN A PLAN A CANAL PANAMA"
+
+$ lab05_ex1 "A MAN A PLAN A A CANAL PANAMA"
+The string A MAN A PLAN A A CANAL PANAMA is not palindromic.
+
+$ lab05_ex1 "A MAN A PLAN A A CANAL PANAM"
+The string A MAN A PLAN A A CANAL PANAM is not palindromic.

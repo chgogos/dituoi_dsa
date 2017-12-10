@@ -1,0 +1,10 @@
+$ stl_stack_example
+Usage examples:
+                 stl_stack_example SOFOS
+                 stl_stack_example "A MAN A PLAN A CANAL PANAMA"
+
+$ stl_stack_example "A MAN A PLAN A CANAL PANAMA"
+The sentence A MAN A PLAN A CANAL PANAMA is palindromic.
+
+$ stl_stack_example SOFIA
+The sentence SOFIA is not palindromic.
