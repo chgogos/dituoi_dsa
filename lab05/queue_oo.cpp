@@ -43,11 +43,12 @@ public:
     return x;
   }
 
+
   void print(bool internal = true) {
     for (int i = front; i < front + size; i++)
       cout << data[i % capacity] << " ";
     cout << endl;
-    if (internal)
+    if (internal){
       for (int i = 0; i < capacity; i++)
         if (front <= rear && i >= front && i <= rear)
           cout << "[" << i << "]->" << data[i] << " ";
@@ -55,6 +56,7 @@ public:
           cout << "[" << i << "]->" << data[i] << " ";
         else
           cout << "[" << i << "]->X  ";
+    }
     cout << " (front:" << front << " rear:" << rear << ")" << endl;
   }
 };

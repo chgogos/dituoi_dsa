@@ -36,6 +36,13 @@ public:
     return data[top + 1];
   }
 
+  T pop2() {
+    if (top < 1)
+      throw "must be at least 2";
+    top-=2;
+    return data[top + 1];
+  }
+
   void print() {
     for (int i = 0; i <= top; i++)
       cout << data[i] << " ";
@@ -45,11 +52,10 @@ public:
 
 int main() {
   my_stack<char> astack(100);
-  for (char c = 65; c < 65 + 26; c++)
-    astack.push(c);
+  astack.push('A');
+  astack.push('B');
+  astack.push('C');
   astack.print();
-  while (!astack.empty()) {
-    cout << astack.pop() << " ";
-  }
-  cout << endl;
+  astack.pop2();
+  astack.print();  
 }
