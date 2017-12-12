@@ -24,5 +24,5 @@ int main() {
   }
   cout << "Decimal: " << sum << endl;
 
-  cout << "Decimal: " << stoi(bs, nullptr, 2); // one line solution :)
+  cout << "Decimal: " << stoi(bs, nullptr, 2) << endl; // one line solution :)
 }

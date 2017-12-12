@@ -62,6 +62,7 @@ public:
 };
 
 int main() {
+  cout << "Custom queue implementation" << endl;
   my_queue<int> aqueue(10);
   cout << "1. Enqueue 10 items" << endl;
   for (int i = 51; i <= 60; i++)

@@ -1,3 +1,7 @@
-std::stack example
-A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
-Z Y X W V U T S R Q P O N M L K J I H G F E D C B A 
+std::queue
+1. Enqueue 10 items
+51 52 53 54 55 56 57 58 59 
+2. Dequeue 5 items
+51 52 53 54 55 
+3. Enqueue 3 items
+61 62 63 56 57 58 59 61 62 63 
