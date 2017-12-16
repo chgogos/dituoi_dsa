@@ -11,7 +11,7 @@ int main() {
   // queue<int, list<int>> aqueue; // adaptor over a list container
 
   cout << "1. Enqueue 10 items" << endl;
-  for (int i = 51; i < 60; i++) {
+  for (int i = 51; i <= 60; i++) {
     cout << i << " ";
     aqueue.push(i);
   }
