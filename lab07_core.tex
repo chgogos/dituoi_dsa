@@ -26,6 +26,32 @@
 \subsection{Κατακερματισμός με αλυσίδες}
 
 \section{Κατακερματισμός με την STL}
+Η STL διαθέτει την κλάση std::hash που μπορεί να χρησιμοποιηθεί για την επιστροφή hash τιμών για διάφορους τύπους δεδομένων. Στον ακόλουθο κώδικα παρουσιάζεται η χρήση της 
+std::hash.
+
+\lstinputlisting[caption = Παράδειγμα χρήσης της std::hash (stl\_hash.cpp)]{lab07/stl_hash.cpp}
+
+\lstinputlisting[style=DOS]{lab07/stl_hash.out}
+ 
+
+Επιπλεον, η STL υποστηρίζει δύο βασικές δομές κατακερματισμού το std::unordered\_set και το std::unordered\_map. Το std::unordered\_set υλοποιείται ως ένας πίνακας κατακερματισμού και μπορεί να περιέχει τιμές (κλειδιά) οποιουδήποτε τύπου οι οποίες γίνονται hash σε διάφορες θέσεις του πίνακα κατακερματισμού. Κατά μέσο όρο, οι λειτουργίες σε ένα std::unordered\_set (εύρεση, εισαγωγή και διαγραφή κλειδιού) πραγματοποιούνται σε σταθερό χρόνο O(1). Ένα std::unordered\_set δεν περιέχει διπλότυπα, ενώ αν υπάρχει αυτή η ανάγκη τότε μπορεί να χρησιμοποιηθεί το std::unordered\_multiset. 
+
+Στον κώδικα που ακολουθεί οι χαρακτήρες ενός λεκτικού εισάγονται ένας προς ένας σε ένα std::unordered\_set έτσι ώστε να υπολογιστεί το πλήθος των διακριτών χαρακτήρων του λεκτικού.
+
+\lstinputlisting[caption = Παράδειγμα χρήσης του std::unordered\_set (stl\_unordered\_set.cpp)]{lab07/stl_unordered_set.cpp}
+
+\lstinputlisting[style=DOS]{lab07/stl_unordered_set.out}
+
+To std::unordered\_map αποθηκεύει ζεύγη (κλειδί-τιμή). Το κλειδί αναγνωριζει με μοναδικό τρόπο το κάθε ζεύγος και γίνεται hash σε συγκεκριμένη θέση του πίνακα κατακερματισμού. Όπως και στο std::unordered\_set. κατά μέσο όρο, οι λειτουργίες σε ένα std::unordered\_map πραγματοποιούνται σε σταθερό χρόνο O(1). Η ανάθεση τιμής σε κλειδί μπορεί να γίνει με τους τελεστές = και [] ενώ το πέρασμα από τις τιμές ενός std::unordered\_map μπορεί να γίνει με  iterator ή με range for.
+ 
+\lstinputlisting[caption = Παράδειγμα χρήσης του std::unordered\_map (stl\_unordered\_map.cpp)]{lab07/stl_unordered_map.cpp}
+
+\lstinputlisting[style=DOS]{lab07/stl_unordered_map.out}
+
+\section{Κατακερματισμός και κρυπτογράφηση}
+
+\section{Bloom filters}
+A Bloom filter is a space-efficient probabilistic data structure, conceived by Burton Howard Bloom in 1970, that is used to test whether an element is a member of a set. False positive matches are possible, but false negatives are not – in other words, a query returns either "possibly in set" or "definitely not in set". Elements can be added to the set, but not removed (though this can be addressed with a "counting" filter); the more elements that are added to the set, the larger the probability of false positives.
 
 \section{Παραδείγματα}
 
@@ -34,12 +60,12 @@
 
 \lstinputlisting[caption = Ορισμός δομής employee και δημιουργία τυχαίων λεκτικών (employees.cpp)]{lab07/employees.cpp}
 
-
 \lstinputlisting[caption = Yλοποίηση πίνακα κατακερματισμού για γρήγορη αποθήκευση και αναζήτηση εγγραφών (lab07\_ex1.cpp)]{lab07/lab07_ex1.cpp}
 
 \lstinputlisting[style=DOS]{lab07/lab07_ex1.out}
 
 \subsection{Παράδειγμα 2}
+Στο παράδειγμα αυτό παρουσιάζεται η λύση του ίδιου προβλήματος με το παράδειγμα 1 με τη διαφορά ότι πλέον χρησιμοποιείται η δομή std::unordered\_map της STL.
 
 \lstinputlisting[caption = Γρήγορη αποθήκευση και αναζήτηση εγγραφών με τη χρήση της std::unordered\_map (lab07\_ex2.cpp)]{lab07/lab07_ex2.cpp}
 
@@ -47,7 +73,13 @@
 
 \subsection{Παράδειγμα 3}
 Στο παράδειγμα αυτό εξετάζονται πέντε διαφορετικοί τρόποι με τους οποίους ελέγχεται για ένα μεγάλο πλήθος τιμών (5.000.000) πόσες από αυτές δεν περιέχονται σε ένα δεδομένο σύνολο 1.000 τιμών. Οι τιμές είναι ακέραιες και επιλέγονται με τυχαίο τρόπο στο δάστημα [0,100.000]. Ο χρόνος που απαιτεί η κάθε προσέγγιση χρονομετρείται.
-Η πρώτη προσέγγιση 
+\begin{itemize}[noitemsep]
+\item Η πρώτη προσέγγιση (scenario1) χρησιμοποιεί ένα vector για να αποθηκεύσει το σύνολο των 1.000 τυχαίων ακεραίων τιμών και αναζητά σειριακά κάθε τιμή στο vector. 
+\item Η δεύτερη προσέγγιση (scenario2) χρησιμοποιεί επίσης ένα vector για να αποθηκεύσει το σύνολο των 1.000 τυχαίων ακεραίων τιμών, τις ταξινομεί και αναζητά κάθε τιμή στο ταξινομημένο vector. 
+\item Η τρίτη προσέγγιση (scenario3) αποθηκεύει τις 1.000 τυχαίες ακεραίες τιμές σε ένα std::set (υλοποιείται στην STL ως δυαδικό δένδρο αναζήτησης) και αναζητά κάθε τιμή σε αυτό. 
+\item Η τέταρτη προσέγγιση (scenario4) αποθηκεύει τις 1.000 τυχαίες ακεραίες τιμές σε ένα std::unordered\_set (υλοποιείται στην STL ως πίνακας κατακερματισμού) και αναζητά κάθε τιμή σε αυτό.
+\item Η πέμπτη προσέγγιση (scenario5) υλοποιεί ένα Bloom filter που χρησιμοποιεί ως βασική δομή ένα σύνολο δυαδικών ψηφίων με μέγεθος 10.001. 
+\end{itemize}
 
 \lstinputlisting[caption = Έλεγχος ύπαρξης τιμών σε ένα σύνολο τιμών (lab07\_ex3.cpp)]{lab07/lab07_ex3.cpp}
 
@@ -55,7 +87,7 @@
 
 \section{Ασκήσεις}
 \begin{enumerate}
-\item α
+\item Γράψτε μια συνάρτηση που να δέχεται έναν πίνακα ακεραίων και έναν ακέραιο αριθμό sum και να βρίσκει το πλήθος από όλα τα ζεύγη τιμών του πίνακα που το άθροισμά τους είναι ίσο με sum.
 \item β
 \end{enumerate}
 
