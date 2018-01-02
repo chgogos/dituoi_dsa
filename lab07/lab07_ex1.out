@@ -1,3 +1,3 @@
-Load factor: 0.2 employees found: 2000 employees not found: 2000 time elapsed: 141452.50 microseconds
-Load factor: 0.30 employees found: 3000 employees not found: 3000 time elapsed: 316067.20 microseconds
-Load factor: 0.80 employees found: 8000 employees not found: 8000 time elapsed: 2270363.00 microseconds
+Load factor: 0.2 employees found: 2223 employees not found: 1777 time elapsed: 0.00 microseconds
+Load factor: 0.30 employees found: 3444 employees not found: 2556 time elapsed: 0.00 microseconds
+Load factor: 0.80 employees found: 10936 employees not found: 5064 time elapsed: 13034.60 microseconds

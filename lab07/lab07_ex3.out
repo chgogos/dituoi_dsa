@@ -1,5 +1,4 @@
-Values not in the set (using unsorted vector): 4994953 elapsed time: 1.9185e+007 microseconds, 19.185 seconds
-Values not in the set (using sorted vector): 4994953 elapsed time: 1.02876e+006 microseconds, 1.02876 seconds
-Values not in the set (using std::set): 4994953 elapsed time: 1.09391e+006 microseconds, 1.09391 seconds
-Values not in the set (using std::unordered_set): 4994953 elapsed time: 598562 microseconds, 0.598562 seconds
-Values not in the set (using bloom filter + std::unordered_set): 4994953 elapsed time: 297832 microseconds, 0.297832 seconds
+Values not in the set (using unsorted vector): 4950193 elapsed time: 20.3902 seconds
+Values not in the set (using sorted vector): 4950193 elapsed time: 1.03272 seconds
+Values not in the set (using std::set): 4950193 elapsed time: 1.09995 seconds
+Values not in the set (using std::unordered_set): 4950193 elapsed time: 0.585557 seconds

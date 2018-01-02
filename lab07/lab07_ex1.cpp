@@ -1,4 +1,5 @@
-#include "employees.cpp"
+#include "hashes.cpp"
+#include "random_strings.cpp"
 #include <chrono>
 #include <iomanip>
 #include <iostream>
@@ -9,15 +10,13 @@ using namespace std::chrono;
 
 const int N = 10000; // HashTable size
 
-int simple_string_hash(string &s) {
-  int h = 0;
-  for (char c : s)
-    h += c;
-  return h % N;
-}
+struct employee {
+  string name;
+  string address;
+};
 
 void insert(employee hash_table[], employee &ypa) {
-  int pos = simple_string_hash(ypa.name);
+  int pos = hash1(ypa.name) % N;
   while (hash_table[pos].name != "") {
     pos++;
     pos %= N;
@@ -26,7 +25,7 @@ void insert(employee hash_table[], employee &ypa) {
 }
 
 bool search(employee hash_table[], string &name, employee &ypa) {
-  int pos = simple_string_hash(name);
+  int pos = hash1(name) % N;
   int c = 0;
   while (hash_table[pos].name != name) {
     if (hash_table[pos].name == "")

@@ -1,4 +1,4 @@
-#include "employees.cpp"
+#include "random_strings.cpp"
 #include <chrono>
 #include <iomanip>
 #include <iostream>
@@ -7,6 +7,11 @@
 #include <vector>
 
 using namespace std::chrono;
+
+struct employee {
+  string name;
+  string address;
+};
 
 int main() {
   vector<int> SIZES{2000, 3000, 8000};
@@ -17,15 +22,15 @@ int main() {
     for (int i = 0; i < x; i++) {
       employee ypa;
       ypa.name = generate_random_string(3);
-      ypa.address = generate_random_string(3);
+      ypa.address = generate_random_string(20);
       umap[ypa.name] = ypa;
       names.push_back(ypa.name);
     }
     // generate x more names
     for (int i = 0; i < x; i++)
-      names.push_back(generate_random_string(10));
+      names.push_back(generate_random_string(3));
 
-    // time execution of 2*E searches in the HashTable
+    // time execution of 2*x searches in the HashTable
     auto t1 = high_resolution_clock::now();
     int c = 0;
     for (string name : names)
