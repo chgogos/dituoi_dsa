@@ -1,9 +1,7 @@
 #include <iostream>
-#include <random>
 
 using namespace std;
 
-constexpr int SIZE = 101; // HASHTABLE SIZE
 struct record {
   string key;
   string value;
@@ -11,84 +9,97 @@ struct record {
 
 class oa_hashtable {
 private:
-  record *data[SIZE];
-  int number_of_items;
+  int capacity;
+  int size;
+  record **data; // array of pointers to records
 
   size_t hash(string &key) {
     size_t value = 0;
-    for (int i = 0; i < key.length(); i++)
+    for (size_t i = 0; i < key.length(); i++)
       value = 37 * value + key[i];
-    return value % SIZE;
+    return value % capacity;
   }
 
 public:
-  oa_hashtable() {
-    for (int i = 0; i < SIZE; i++)
+  oa_hashtable(int capacity) {
+    this->capacity = capacity;
+    size = 0;
+    data = new record *[capacity];
+    for (int i = 0; i < capacity; i++)
       data[i] = nullptr;
-    number_of_items = 0;
   }
 
   ~oa_hashtable() {
-    for (int i = 0; i < SIZE; i++)
+    for (size_t i = 0; i < capacity; i++)
       if (data[i] != nullptr)
         delete data[i];
+    delete[] data;
   }
 
   record *get(string &key) {
-    size_t i = hash(key);
-    while (data[i] != nullptr) {
-      if (data[i]->key == key)
-        return data[i];
-      i = (i + 1) % SIZE;
+    size_t hash_code = hash(key);
+    while (data[hash_code] != nullptr) {
+      if (data[hash_code]->key == key)
+        return data[hash_code];
+      hash_code = (hash_code + 1) % capacity;
     }
     return nullptr;
   }
 
   void put(record *arecord) {
-    if (number_of_items == SIZE)
+    if (size == capacity)
       cerr << "The hashtable is full" << endl;
-    size_t i = hash(arecord->key);
-    while (data[i] != nullptr) {
-      if (data[i]->key == arecord->key) {
-        number_of_items--;
-        delete data[i];
-        data[i] = arecord;
+    size_t hash_code = hash(arecord->key);
+    while (data[hash_code] != nullptr && data[hash_code]->key != "ERASED") {
+      if (data[hash_code]->key == arecord->key) {
+        delete data[hash_code];
+        data[hash_code] = arecord; // update existing key
+        return;
       }
-      i = (i + 1) % SIZE;
+      hash_code = (hash_code + 1) % capacity;
     }
-    data[i] = arecord;
-    number_of_items++;
+    data[hash_code] = arecord;
+    size++;
+  }
+
+  void erase(string &key) {
+    size_t hash_code = hash(key);
+    while (data[hash_code] != nullptr) {
+      if (data[hash_code]->key == key) {
+        delete data[hash_code];
+        data[hash_code] = new record{"ERASED", "ERASED"}; // insert dummy record
+        size--;
+        return;
+      }
+      hash_code = (hash_code + 1) % capacity;
+    }
   }
 
   void print_all() {
-    for (int i = 0; i < SIZE; i++)
-      if (data[i] != nullptr)
-        cout << "#(" << i << ") " << data[i]->key << data[i]->value << endl;
-    cout << "Load factor: " << (double)number_of_items / (double)SIZE << endl;
+    for (int i = 0; i < capacity; i++)
+      if (data[i] != nullptr && data[i]->key != "ERASED")
+        cout << "#(" << i << ") " << data[i]->key << " " << data[i]->value
+             << endl;
+    cout << "Load factor: " << (double)size / (double)capacity << endl;
   }
 };
 
 int main() {
-  oa_hashtable hashtable;
-  record *precord1 = new struct record();
-  precord1->key = "John Smith";
-  precord1->value = "+1-555-1234";
-  record *precord2 = new struct record();
-  precord2->key = "Lisa Smith";
-  precord2->value = "+1-555-8976";
-  record *precord3 = new struct record();
-  precord3->key = "Sam Doe";
-  precord3->value = "+1-555-5030";
+  oa_hashtable hashtable(101); // hashtable with maximum capacity 101 items
+  record *precord1 = new record{"John Smith", "+1-555-1234"};
+  record *precord2 = new record{"Lisa Smith", "+1-555-8976"};
+  record *precord3 = new record{"Sam Doe", "+1-555-5030"};
   hashtable.put(precord1);
   hashtable.put(precord2);
   hashtable.put(precord3);
-
+  hashtable.print_all();
   string key = "Sam Doe";
   record *precord = hashtable.get(key);
   if (precord == nullptr)
     cout << "Key not found" << endl;
-  else
+  else {
     cout << "Key found: " << precord->key << " " << precord->value << endl;
-
+    hashtable.erase(key);
+  }
   hashtable.print_all();
 }

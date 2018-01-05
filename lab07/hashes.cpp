@@ -1,4 +1,5 @@
 #include <string>
+
 using namespace std;
 
 size_t hash0(string &key) {

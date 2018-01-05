@@ -14,7 +14,7 @@ struct employee {
 };
 
 int main() {
-  vector<int> SIZES{2000, 3000, 8000};
+  vector<int> SIZES{20000, 30000, 80000};
   for (int x : SIZES) {
     unordered_map<string, employee> umap;
     // generate x random employees, insert them at the hashtable
@@ -39,11 +39,10 @@ int main() {
         c++;
       }
     auto t2 = high_resolution_clock::now();
-  std:
-    chrono::duration<double, std::micro> duration = t2 - t1;
+    std::chrono::duration<double, std::micro> duration = t2 - t1;
     cout << "Load factor: " << setprecision(2) << umap.load_factor()
-         << " employees found: " << c << " employees not found: " << 2 * x - c
-         << " time elapsed: " << std::fixed << duration.count()
-         << " microseconds" << endl;
+         << " employees found: " << c << ", employees not found: " << 2 * x - c
+         << " time elapsed: " << std::fixed << duration.count() / 1E6
+         << " seconds" << endl;
   }
 }

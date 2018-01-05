@@ -8,7 +8,7 @@
 
 using namespace std::chrono;
 
-const int N = 10000; // HashTable size
+const int N = 100000; // HashTable size
 
 struct employee {
   string name;
@@ -41,9 +41,9 @@ bool search(employee hash_table[], string &name, employee &ypa) {
 }
 
 int main() {
-  vector<int> SIZES{2000, 3000, 8000};
+  vector<int> SIZES{20000, 30000, 80000};
   for (int x : SIZES) {
-    struct employee hash_table[N];
+    struct employee *hash_table = new struct employee[N];
     // generate x random employees, insert them at the hashtable
     vector<string> names;
     for (int i = 0; i < x; i++) {
@@ -66,11 +66,11 @@ int main() {
         c++;
       }
     auto t2 = high_resolution_clock::now();
-  std:
-    chrono::duration<double, std::micro> duration = t2 - t1;
+    std::chrono::duration<double, std::micro> duration = t2 - t1;
     cout << "Load factor: " << setprecision(2) << (double)x / (double)N
-         << " employees found: " << c << " employees not found: " << 2 * x - c
-         << " time elapsed: " << std::fixed << duration.count()
-         << " microseconds" << endl;
+         << " employees found: " << c << ", employees not found: " << 2 * x - c
+         << " time elapsed: " << std::fixed << duration.count() / 1E6
+         << " seconds" << endl;
+    delete[] hash_table;
   }
 }

@@ -1,10 +1,8 @@
-#include <forward_list>
 #include <iostream>
-#include <random>
+#include <list>
 
 using namespace std;
 
-constexpr int SIZE = 101;
 struct record {
   string key;
   string value;
@@ -12,69 +10,83 @@ struct record {
 
 class sc_hashtable {
 private:
-  forward_list<record *> data[SIZE];
+  int size;
+  list<record *> *buckets;
 
   size_t hash(string &key) {
     size_t value = 0;
-    for (int i = 0; i < key.length(); i++)
+    for (size_t i = 0; i < key.length(); i++)
       value = 37 * value + key[i];
-    return value % SIZE;
+    return value % size;
   }
 
 public:
+  sc_hashtable(int size) {
+    this->size = size;
+    buckets = new list<record *>[size];
+  }
+
   ~sc_hashtable() {
-    for (int i = 0; i < SIZE; i++)
-      for (record *rec : data[i])
+    for (size_t i = 0; i < size; i++)
+      for (record *rec : buckets[i])
         delete rec;
+    delete[] buckets;
   }
 
   record *get(string &key) {
-    size_t i = hash(key);
-    if (data[i].empty())
+    size_t hash_code = hash(key);
+    if (buckets[hash_code].empty())
       return nullptr;
     else
-      for (record *rec : data[i])
+      for (record *rec : buckets[hash_code])
         if (rec->key == key)
           return rec;
+    return nullptr;
   }
 
   void put(record *arecord) {
-    size_t i = hash(arecord->key);
-    data[i].push_front(arecord);
+    size_t hash_code = hash(arecord->key);
+    buckets[hash_code].push_back(arecord);
+  }
+
+  void erase(string &key) {
+    size_t hash_code = hash(key);
+    list<record *>::iterator itr = buckets[hash_code].begin();
+    while (itr != buckets[hash_code].end())
+      if ((*itr)->key == key)
+        itr = buckets[hash_code].erase(itr);
+      else
+        ++itr;
   }
 
   void print_all() {
     int m = 0;
-    for (int i = 0; i < SIZE; i++)
-      if (!data[i].empty())
-        for (record *rec : data[i]) {
-          cout << "#(" << i << ") " << rec->key << rec->value << endl;
+    for (size_t i = 0; i < size; i++)
+      if (!buckets[i].empty())
+        for (record *rec : buckets[i]) {
+          cout << "#(" << i << ") " << rec->key << " " << rec->value << endl;
           m++;
         }
-    cout << "Load factor: " << (double)m / (double)SIZE << endl;
+    cout << "Load factor: " << (double)m / (double)size << endl;
   }
 };
 
 int main() {
-  sc_hashtable hashtable;
-  record *precord1 = new struct record();
-  precord1->key = "John Smith";
-  precord1->value = "+1-555-1234";
-  record *precord2 = new struct record();
-  precord2->key = "Lisa Smith";
-  precord2->value = "+1-555-8976";
-  record *precord3 = new struct record();
-  precord3->key = "Sam Doe";
-  precord3->value = "+1-555-5030";
+  sc_hashtable hashtable(101);
+  record *precord1 = new record{"John Smith", "+1-555-1234"};
+  record *precord2 = new record{"Lisa Smith", "+1-555-8976"};
+  record *precord3 = new record{"Sam Doe", "+1-555-5030"};
   hashtable.put(precord1);
   hashtable.put(precord2);
   hashtable.put(precord3);
-
+  hashtable.print_all();
   string key = "Sam Doe";
   record *precord = hashtable.get(key);
   if (precord == nullptr)
     cout << "Key not found" << endl;
-  else
+  else {
     cout << "Key found: " << precord->key << " " << precord->value << endl;
+    hashtable.erase(key);
+  }
   hashtable.print_all();
 }

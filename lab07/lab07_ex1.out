@@ -1,3 +1,3 @@
-Load factor: 0.2 employees found: 2223 employees not found: 1777 time elapsed: 0.00 microseconds
-Load factor: 0.30 employees found: 3444 employees not found: 2556 time elapsed: 0.00 microseconds
-Load factor: 0.80 employees found: 10936 employees not found: 5064 time elapsed: 13034.60 microseconds
+Load factor: 0.2 employees found: 33565, employees not found: 6435 time elapsed: 0.01 seconds
+Load factor: 0.30 employees found: 54478, employees not found: 5522 time elapsed: 0.13 seconds
+Load factor: 0.80 employees found: 159172, employees not found: 828 time elapsed: 12.50 seconds
