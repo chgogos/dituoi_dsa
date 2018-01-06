@@ -1,6 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Εισαγωγή}{}% 1
 \BOOKMARK [1][-]{section.2}{Γραφήματα}{}% 2
-\BOOKMARK [1][-]{section.3}{Παραδείγματα}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Παράδειγμα 1}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Παράδειγμα 2}{section.3}% 5
-\BOOKMARK [1][-]{section.4}{Ασκήσεις}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Αναπαράσταση γραφημάτων}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Σημαντικοί αλγόριθμοι γραφημάτων}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Αλγόριθμος του Dijkstra για εύρεση συντομότερων διαδρομών}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Περιγραφή του αλγορίθμου}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Κωδικοποίηση του αλγορίθμου}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Παραδείγματα}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Παράδειγμα 1}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Παράδειγμα 2}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Ασκήσεις}{}% 11
