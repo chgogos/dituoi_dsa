@@ -1,0 +1,2 @@
+$ g++ -Wall -std=c++11 graph.cpp graph_ex1.cpp -o graph_ex1 
+$ ./graph_ex1

@@ -1,0 +1,6 @@
+Shortest path from vertex A to vertex A has length 0
+Shortest path from vertex A to vertex B has length 2
+Shortest path from vertex A to vertex C has length 5
+Shortest path from vertex A to vertex D has length 3
+Shortest path from vertex A to vertex E has length 5
+Shortest path from vertex A to vertex F has length 10

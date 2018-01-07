@@ -1,0 +1,2 @@
+$ g++ -std=c++11 graph.cpp dijkstra.cpp dijkstra_ex1.cpp -o dijkstra_ex1
+$ ./dijkstra_ex1

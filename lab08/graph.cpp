@@ -1,4 +1,4 @@
-#include "adj_list_graph.hpp"
+#include "graph.hpp"
 
 using namespace std;
 
