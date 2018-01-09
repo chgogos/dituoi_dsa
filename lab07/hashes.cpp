@@ -30,7 +30,7 @@ size_t hash2(string &key) {
   return h;
 }
 
-// FNV hash
+// FNV (Fowler–Noll–Vo) hash
 size_t hash3(string &key) {
   size_t h = 0x811c9dc5;
   for (char c : key)

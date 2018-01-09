@@ -1,4 +1,8 @@
+#(1) Sam Doe +1-555-5030
+#(46) John Smith +1-555-1234
+#(57) Lisa Smith +1-555-8976
+Load factor: 0.029703
 Key found: Sam Doe +1-555-5030
-#(1) Sam Doe+1-555-5030
-#(46) John Smith+1-555-1234
-#(57) Lisa Smith+1-555-8976
+#(46) John Smith +1-555-1234
+#(57) Lisa Smith +1-555-8976
+Load factor: 0.019802
