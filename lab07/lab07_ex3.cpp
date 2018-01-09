@@ -22,9 +22,9 @@ void scenario1(vector<uint32_t> &avector) {
   mt19937 mt(seed);
   int c = 0;
   for (int i = 0; i < M; i++)
-    if (find(avector.begin(), avector.end(), dist(mt)) == avector.end())
+    if (find(avector.begin(), avector.end(), dist(mt)) != avector.end())
       c++;
-  cout << "Values not in the set (using unsorted vector): " << c << " ";
+  cout << "Values in the set (using unsorted vector): " << c << " ";
 }
 
 void scenario2(vector<uint32_t> &avector) {
@@ -33,9 +33,9 @@ void scenario2(vector<uint32_t> &avector) {
   mt19937 mt(seed);
   int c = 0;
   for (int i = 0; i < M; i++)
-    if (!binary_search(avector.begin(), avector.end(), dist(mt)))
+    if (binary_search(avector.begin(), avector.end(), dist(mt)))
       c++;
-  cout << "Values not in the set (using sorted vector): " << c << " ";
+  cout << "Values in the set (using sorted vector): " << c << " ";
 }
 
 void scenario3(set<uint32_t> &aset) {
@@ -43,9 +43,9 @@ void scenario3(set<uint32_t> &aset) {
   mt19937 mt(seed);
   int c = 0;
   for (int i = 0; i < M; i++)
-    if (aset.find(dist(mt)) == aset.end())
+    if (aset.find(dist(mt)) != aset.end())
       c++;
-  cout << "Values not in the set (using std::set): " << c << " ";
+  cout << "Values in the set (using std::set): " << c << " ";
 }
 
 void scenario4(unordered_set<uint32_t> &auset) {
@@ -53,9 +53,9 @@ void scenario4(unordered_set<uint32_t> &auset) {
   mt19937 mt(seed);
   int c = 0;
   for (int i = 0; i < M; i++)
-    if (auset.find(dist(mt)) == auset.end())
+    if (auset.find(dist(mt)) != auset.end())
       c++;
-  cout << "Values not in the set (using std::unordered_set): " << c << " ";
+  cout << "Values in the set (using std::unordered_set): " << c << " ";
 }
 
 int main() {

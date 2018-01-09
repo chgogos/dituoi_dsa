@@ -1,8 +1,0 @@
-\BOOKMARK [1][-]{section.1}{Εισαγωγή}{}% 1
-\BOOKMARK [1][-]{section.2}{Γραφήματα}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Αναπαράσταση γραφημάτων}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Ανάγνωση δεδομένων γραφήματος από αρχείο}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Σημαντικοί αλγόριθμοι γραφημάτων}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Αλγόριθμος του Dijkstra για εύρεση συντομότερων διαδρομών}{}% 6
-\BOOKMARK [2][-]{subsection.3.1}{Περιγραφή του αλγορίθμου}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.2}{Κωδικοποίηση του αλγορίθμου}{section.3}% 8

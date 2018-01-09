@@ -12,15 +12,16 @@
 *.xml
 ceteiep_dsa_book.out
 ceteiep_dsa_book_part-A.out
-lab01.out
-lab02.out
-lab03.out
-lab04.out
-lab05.out
-lab06.out
-lab07.out
-lab08.out
-lab09.out
+# ceteiep_dsa_book_part-B.out
+# lab01.out
+# lab02.out
+# lab03.out
+# lab04.out
+# lab05.out
+# lab06.out
+# lab07.out
+# lab08.out
+# lab09.out
 
 # Visual Studio Code
 .vscode 
