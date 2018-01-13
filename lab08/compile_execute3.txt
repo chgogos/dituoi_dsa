@@ -1,0 +1,2 @@
+$ g++ -std=c++11 lab08_ex2.cpp graph.cpp dijkstra.cpp -o lab08_ex2
+$ ./lab08_ex2

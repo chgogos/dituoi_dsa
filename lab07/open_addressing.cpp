@@ -47,8 +47,10 @@ public:
   }
 
   void put(record *arecord) {
-    if (size == capacity)
+    if (size == capacity) {
       cerr << "The hashtable is full" << endl;
+      return;
+    }
     size_t hash_code = hash(arecord->key);
     while (data[hash_code] != nullptr && data[hash_code]->key != "ERASED") {
       if (data[hash_code]->key == arecord->key) {

@@ -1,0 +1,32 @@
+\documentclass[11pt,a4paper]{book}
+
+% bibliography on the same page
+% https://tex.stackexchange.com/questions/74296/to-have-no-pagebreak-before-bibliography
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+\usepackage{ceteiep_dsa_notes_whitebg}
+
+\addto\captionsgreek{\renewcommand{\chaptername}{Εργαστήριο}}
+
+\title{Δομές Δεδομένων και Αλγόριθμοι \\ ΜΕΡΟΣ Γ' \\ Εργαστήριο (C++)\\ Τ.Ε.Ι. Ηπείρου - Τμήμα Μηχανικών Πληροφορικής Τ.Ε.}
+\author{Χρήστος Γκόγκος }
+\date{Άρτα - 2017}
+
+\begin{document}
+% \frontmatter
+\maketitle
+% \tableofcontents
+\mainmatter
+
+\setcounter{chapter}{6} 
+% Εργαστήριο 7
+\chapter{Κατακερματισμός, δομές κατακερματισμού στην STL}
+\input{lab07_core}
+
+% Εργαστήριο 8
+\chapter{Γραφήματα}
+\input{lab08_core}
+
+\end{document}
+

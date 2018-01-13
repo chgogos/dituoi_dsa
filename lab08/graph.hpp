@@ -5,7 +5,6 @@
 #include <utility>
 #include <vector>
 
-
 using namespace std;
 
 map<string, vector<pair<int, string>>> read_data(string fn);

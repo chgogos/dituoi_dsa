@@ -1,0 +1,16 @@
+Vertex A has degree 2 and average weighted degree 3.5
+Vertex B has degree 4 and average weighted degree 2
+Vertex C has degree 4 and average weighted degree 3
+Vertex D has degree 3 and average weighted degree 1.66667
+Vertex E has degree 5 and average weighted degree 5.6
+Vertex F has degree 3 and average weighted degree 4
+Vertex G has degree 3 and average weighted degree 5.33333
+Vertex H has degree 2 and average weighted degree 6
+Source A: dist=2->{B } dist=3->{C } dist=4->{D } dist=5->{E F } dist=11->{G } dist=12->{H } 
+Source B: dist=1->{C } dist=2->{A D } dist=3->{E F } dist=9->{G } dist=10->{H } 
+Source C: dist=1->{B } dist=2->{D } dist=3->{A E } dist=4->{F } dist=10->{G } dist=11->{H } 
+Source D: dist=1->{E } dist=2->{B C } dist=4->{A F } dist=10->{G } dist=11->{H } 
+Source E: dist=1->{D } dist=3->{B C F } dist=5->{A } dist=9->{G } dist=10->{H } 
+Source F: dist=3->{B E } dist=4->{C D } dist=5->{A } dist=6->{G } dist=7->{H } 
+Source G: dist=1->{H } dist=6->{F } dist=9->{B E } dist=10->{C D } dist=11->{A } 
+Source H: dist=1->{G } dist=7->{F } dist=10->{B E } dist=11->{C D } dist=12->{A } 
