@@ -1,3 +1,4 @@
+# makefile example for lab08_ex2 (version 2)
 CC=g++
 CFLAGS=-std=c++11
 

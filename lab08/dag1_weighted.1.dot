@@ -1,0 +1,10 @@
+digraph {
+    rankdir=LR; 
+    A -> B[label="4",weight="4"];
+    A -> C[label="2",weight="2"];
+    B -> C[label="5",weight="5"];
+    B -> D[label="10",weight="10"];
+    C -> E[label="3",weight="3"];
+    D -> F[label="11",weight="11"];
+    E -> D[label="4",weight="4"];
+}
