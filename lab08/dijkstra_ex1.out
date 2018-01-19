@@ -1,6 +1,6 @@
-Shortest path from vertex A to vertex A has length 0
-Shortest path from vertex A to vertex B has length 2
-Shortest path from vertex A to vertex C has length 5
-Shortest path from vertex A to vertex D has length 3
-Shortest path from vertex A to vertex E has length 5
-Shortest path from vertex A to vertex F has length 10
+Shortest path from vertex A to vertex A is {A} having length 0
+Shortest path from vertex A to vertex B is {A B} having length 2
+Shortest path from vertex A to vertex C is {A B C} having length 5
+Shortest path from vertex A to vertex D is {A B D} having length 3
+Shortest path from vertex A to vertex E is {A B D E} having length 5
+Shortest path from vertex A to vertex F is {A B D E F} having length 10

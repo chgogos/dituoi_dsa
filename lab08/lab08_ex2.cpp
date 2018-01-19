@@ -19,20 +19,20 @@ int main() {
   for (auto &kv : graph) {
     string source_vertex = kv.first;
     cout << "Source " << source_vertex << ": ";
-    map<string, int> shortest_path_distances;
+    map<string, pair<string, int>> shortest_path_distances;
     compute_shortest_paths_to_all_vertices(graph, source_vertex,
                                            shortest_path_distances);
 
     vector<int> distances;
     for (auto &p : shortest_path_distances)
-      distances.push_back(p.second);
+      distances.push_back(p.second.second);
     int max = *(max_element(distances.begin(), distances.end()));
 
     for (int i = 1; i <= max; i++) {
       stringstream ss;
       ss << "dist=" << i << "->{";
       for (auto &p : shortest_path_distances)
-        if (p.second == i)
+        if (p.second.second == i)
           ss << p.first << " ";
       ss << "} ";
       string sss = ss.str();
