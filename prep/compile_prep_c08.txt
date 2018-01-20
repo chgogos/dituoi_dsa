@@ -1,0 +1,2 @@
+$ g++ prep_c08.cpp ../lab08/dijkstra.cpp -o prep_c08 -std=c++11
+$ ./prep_c08

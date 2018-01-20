@@ -1,0 +1,2 @@
+$ g++ prep_c05.cpp ../lab08/graph.cpp -o prep_c05 -std=c++11
+$ ./prep_c05
