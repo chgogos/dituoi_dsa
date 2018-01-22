@@ -23,4 +23,5 @@ int main() {
 
   cout << "hash:" << my_hash(s1) << endl;
   cout << "hash:" << my_hash(*s2) << endl;
+  delete s2;
 }
