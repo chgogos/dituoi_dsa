@@ -1,4 +1,0 @@
-Shortest path from vertex A to vertex A is {A} having length 0
-Shortest path from vertex A to vertex B is {A B} having length 2
-Shortest path from vertex A to vertex C is {A B C} having length 5
-Shortest path from vertex A to vertex D is {A B D} having length 3
