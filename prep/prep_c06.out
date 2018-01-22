@@ -1,24 +1,33 @@
-Enter text: dsaghjsdfg dhfskajed
-Enter text: 343478fsdcjh sdfhj
-Enter text: fhjsdgdfhsvcdxbn fdgvsh
+Enter text: dhagsfdghsa ajshgfdshj
+Characters with maximum occurences: h s
+Enter text: hfjksdhafkjds kfhkjsfkjds
+Characters with maximum occurences: s
+Enter text: lkjfhjsfdfdshjgfh
+Characters with maximum occurences: f h s
+Enter text: gdjhsadgfjdhs
+Characters with maximum occurences: h s
+Enter text: 4326187yfjhsda
+Characters with maximum occurences: h s
+Enter text: 36437632764245637
+Characters with maximum occurences: h s
 Enter text:
-Character with maximum occurences: d
-  3
-3 2
-4 2
-7 1
+Occurences for each character:
+  2
+1 1
+2 3
+3 5
+4 4
+5 1
+6 5
+7 4
 8 1
-a 2
-b 1
-c 2
-d 10
-e 1
-f 7
-g 4
-h 7
-j 5
-k 1
-n 1
-s 8
-v 2
-x 1
+a 6
+d 12
+f 12
+g 6
+h 13
+j 12
+k 6
+l 1
+s 13
+y 1

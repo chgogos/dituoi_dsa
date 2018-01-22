@@ -1,21 +1,21 @@
-4893704 1 1 0 0 0 1 1 1 1 
-1 0 0 0 1 1 0 1 1 0 
-1 0 4780440 0 0 0 0 1 1 0 
-0 0 0 0 0 0 0 1 0 1 
-0 1 0 0 8 1 1 0 0 0 
-0 1 0 0 1 0 0 1 1 1 
-1 0 0 0 1 0 2293216 0 1 0 
-1 1 1 1 0 1 0 0 1 0 
-1 1 1 0 0 1 1 1 4250272 1 
-1 0 0 1 0 1 0 0 1 0 
-Vertex:0 degree=7
-Vertex:1 degree=5
-Vertex:2 degree=4
-Vertex:3 degree=2
-Vertex:4 degree=4
-Vertex:5 degree=5
-Vertex:6 degree=4
-Vertex:7 degree=6
-Vertex:8 degree=8
-Vertex:9 degree=4
-Max degree=8, vertices having max degree: 8 
+0 0 1 0 0 0 0 0 1 1 
+0 0 0 1 1 0 1 0 1 0 
+1 0 0 1 1 0 0 0 1 1 
+0 1 1 0 1 0 1 0 0 0 
+0 1 1 1 0 0 1 1 1 0 
+0 0 0 0 0 0 0 1 0 0 
+0 1 0 1 1 0 0 1 0 1 
+0 0 0 0 1 1 1 0 0 1 
+1 1 1 0 1 0 0 0 0 1 
+1 0 1 0 0 0 1 1 1 0 
+Vertex:0 degree=3
+Vertex:1 degree=4
+Vertex:2 degree=5
+Vertex:3 degree=4
+Vertex:4 degree=6
+Vertex:5 degree=1
+Vertex:6 degree=5
+Vertex:7 degree=4
+Vertex:8 degree=5
+Vertex:9 degree=5
+Max degree=6, vertices having max degree: 4 

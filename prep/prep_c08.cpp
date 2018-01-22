@@ -14,7 +14,7 @@ int main() {
   vector<pair<int, string>> va = {{2, "B"}, {6, "C"}};
   graph["A"] = va;
   // alternate vertex and edge creation for vertex A
-  // vector<pair<int, string>> vd;
+  // vector<pair<int, string>> va;
   // vd.push_back(make_pair(2, "B"));
   // vd.push_back(make_pair(6, "C"));
   // graph["A"] = va;
