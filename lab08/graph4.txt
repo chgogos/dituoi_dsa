@@ -1,0 +1,9 @@
+a 5,b 7,d
+b 5,a 6,c 8,d 7,e
+c 6,b 9,e
+d 7,a 8,b 8,e 8,f
+e 7,b 9,c 8,d 9,g, 15,i
+f 8,d 5,g 7,h
+g 9,e 5,f 9,h 8,i
+h 7,f 9,g 11,i 
+i 15,e 8,g 11,h
