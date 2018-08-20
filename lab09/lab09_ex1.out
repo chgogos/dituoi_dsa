@@ -1,0 +1,6 @@
+Pre-order Traversal 10 5 6 8 11 14 18 
+In-order Traversal 5 6 8 10 11 14 18 
+Post-order Traversal 5 6 8 11 14 18 10 
+Searching for key 11: found (11)
+Searching for key 13: not found 
+Minimum 5 Maximum 18

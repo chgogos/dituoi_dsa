@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1534665212 source:e:\git_repos\ceteiep_dsa\lab09\binary_tree.cpp
+	"binary_tree.hpp"
+	<queue>
+	<iostream>
+
+1534664871 e:\git_repos\ceteiep_dsa\lab09\binary_tree.hpp
+	<cstddef>
+
+1534665421 source:e:\git_repos\ceteiep_dsa\lab09\lab09_ex1.cpp
+	"binary_tree.hpp"
+	<iostream>
+	<vector>
+
