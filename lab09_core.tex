@@ -76,6 +76,21 @@
 
 Ιδιαίτερη προσοχή θα πρέπει να δοθεί στην υλοποίηση της διαγραφής ενός κόμβου από το δένδρο έτσι ώστε το δένδρο και μετά τη διαγραφή να εξακολουθεί να είναι δυαδικό δένδρο αναζήτησης \cite{jumping_into_cpp}. 
 
+\begin{figure}[!tbp]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{bst1.png}
+    \label{fig:bst1}
+    \caption{Δυαδικό δένδρο αναζήτησης}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{bst2.png}
+    \label{fig:bst2}
+    \caption{Το δυαδικό δένδρο αναζήτησης μετά τη διαγραφή της ρίζας}
+  \end{minipage}
+\end{figure}
+
 \lstinputlisting[caption = header file για το δυαδικό δένδρο αναζήτησης (bst.hpp)]{lab09/bst.hpp}
 
 \lstinputlisting[caption = source file για το δυαδικό δένδρο αναζήτησης (bst.cpp)]{lab09/bst.cpp}
@@ -91,21 +106,6 @@
 \lstinputlisting[style=DOS]{lab09/bst_ex1.out}
 
 Για να πραγματοποιηθεί η διαγραφή του κόμβου 10, εντοπίζεται ο κόμβος με τη μεγαλύτερη τιμή στο αριστερό υποδένδρο του κόμβου 10, που είναι ο 8 και ο κόμβος αυτός αφαιρείται από το δένδρο αντικαθιστώντας τον κόμβο 10.
-
-\begin{figure}[!tbp]
-  \centering
-  \begin{minipage}[b]{0.4\textwidth}
-    \includegraphics[width=\textwidth]{bst1.png}
-    \label{fig:bst1}
-    \caption{Δυαδικό δένδρο αναζήτησης}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.4\textwidth}
-    \includegraphics[width=\textwidth]{bst2.png}
-    \label{fig:bst2}
-    \caption{Το δυαδικό δένδρο αναζήτησης μετά τη διαγραφή της ρίζας}
-  \end{minipage}
-\end{figure}
 
 \section{Ισοζυγισμένα δυαδικά δένδρα αναζήτησης}
 \label{bbst}
@@ -124,7 +124,7 @@
 
 \lstinputlisting[style=DOS]{lab09/compile_execute3.txt}
 
-Η δε έξοδος που παράγεται είναι η ακόλουθη:
+Η έξοδος που παράγεται είναι η ακόλουθη:
 
 \lstinputlisting[style=DOS]{lab09/lab09_ex1.out}
 
@@ -132,6 +132,16 @@
 \subsection{Παράδειγμα 2}
 
 Δεδομένου ενός δυαδικού δένδρου ζητείται να πραγματοποιείται έλεγχος σχετικά με το εάν το δένδρο είναι δυαδικό δένδρο αναζήτησης ή όχι. 
+
+\lstinputlisting[caption = Λύση παραδείγματος 2 (lab09\_ex2.cpp)]{lab09/lab09_ex2.cpp}
+
+Η μεταγλώττιση και η εκτέλεση του κώδικα γίνεται με τις ακόλουθες εντολές:
+
+\lstinputlisting[style=DOS]{lab09/compile_execute4.txt}
+
+Η έξοδος που παράγεται είναι η ακόλουθη:
+
+\lstinputlisting[style=DOS]{lab09/lab09_ex2.out}
 
 \section{Ασκήσεις}
 

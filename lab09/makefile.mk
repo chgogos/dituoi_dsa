@@ -2,7 +2,7 @@
 CC=g++
 CFLAGS=-Wall -std=c++11
 
-all: binary_tree_ex1 bst_ex1 lab09_ex1
+all: binary_tree_ex1 bst_ex1 lab09_ex1 lab09_ex2
 
 # binary tree
 binary_tree_ex1: binary_tree_ex1.o binary_tree.o 
@@ -16,9 +16,12 @@ bst_ex1: bst_ex1.o bst.o
 lab09_ex1: binary_tree.o lab09_ex1.o
 	$(CC) binary_tree.o lab09_ex1.o -o lab09_ex1
 
+# example2
+lab09_ex2: bst.o lab09_ex2.o
+	$(CC) bst.o lab09_ex2.o -o lab09_ex2
 
 %.o: %.cpp
 	$(CC) -c $< $(CFLAGS)
 
 clean: 
-	rm *.o binary_tree_ex1 bst_ex1 lab09_ex1
+	rm *.o binary_tree_ex1 bst_ex1 lab09_ex1 lab09_ex1
