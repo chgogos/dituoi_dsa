@@ -7,7 +7,6 @@ key F inserted
 key G inserted
 key H inserted
 Level-order Traversal A B C D E F G H 
-A B D H 
-A B E 
-A C F 
-A C G 
+Pre-order Traversal   A B D H E C F G 
+In-order Traversal    H D B E A F C G 
+Post-order Traversal  H D E B F G C A 

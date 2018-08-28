@@ -1,0 +1,2 @@
+$ g++ -Wall -std=c++11 binary_tree.cpp binary_tree_ex1.cpp -o binary_tree_ex1 
+$ ./binary_tree_ex1

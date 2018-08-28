@@ -1,0 +1,2 @@
+$ g++ -Wall -std=c++11 bst.cpp bst_ex1.cpp -o bst_ex1 
+$ ./bst_ex1

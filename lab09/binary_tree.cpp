@@ -3,11 +3,12 @@
 #include <iostream>
 using namespace std;
 
-void insert(node *&root_node, int key)
+node* insert(node *root_node, string key)
 {
     if (root_node == NULL)
     {
-        root_node = new node{key, NULL, NULL};
+        cout << "key " << key << " inserted (root of the tree)" << endl;
+        return new node{key, NULL, NULL};
     }
     else
     {
@@ -33,10 +34,11 @@ void insert(node *&root_node, int key)
                     anode->right = new node{key, NULL, NULL};
                 }
                 cout << "key " << key << " inserted" << endl;
-                break;
+                return anode;
             }
         }
     }
+    return NULL; 
 }
 
 void print_level_order(node *root_node)

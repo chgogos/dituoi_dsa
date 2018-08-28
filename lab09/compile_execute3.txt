@@ -1,0 +1,2 @@
+$ g++ -Wall -std=c++11 binary_search.cpp lab09_ex1.cpp -o lab09_ex1 
+$ ./lab09_ex1
