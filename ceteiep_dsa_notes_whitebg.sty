@@ -1,3 +1,6 @@
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
 \usepackage{hyperref}
 
 \usepackage[table,xcdraw]{xcolor} % tables - colors
@@ -16,7 +19,9 @@
 \usepackage{polyglossia}
 \setmainfont{Times New Roman}
 \setsansfont{Arial}
-\setdefaultlanguage{greek}
+\setdefaultlanguage[numerals=arabic]{greek}
+%\setmainlanguage[numerals=arabic]{greek}
+%\setotherlanguage{english}
 %\setmonofont[Ligatures=TeX]{Consolas}
 
 \usepackage{listings}

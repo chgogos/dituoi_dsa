@@ -6,9 +6,9 @@
 
 Δείκτες, δέσμευση-αποδέσμευση μνήμης, πίνακες, πέρασμα παραμέτρων με τιμή και με αναφορά σε συναρτήσεις, δομές - εγγραφές , κλάσεις - αντικείμενα, ανάγνωση - εγγραφή αρχείων.
 
-### Εργαστήριο 2 - Εισαγωγή στα templates και στην STL (Standard Template Library), εισαγωγή στο TDD (Test Driven Development)
+### Εργαστήριο 2 - Εισαγωγή στα templates και στην STL (Standard Template Library)
 
-Templates, STL containers, STL iterators, STL αλγόριθμοι, lambdas, Test Driven Development στη C++ με τη βιβλιοθήκη [catch](https://github.com/philsquared/Catch).
+Templates, STL containers, STL iterators, STL αλγόριθμοι, lambdas.
 
 ### Εργαστήριο 3 - Αλγόριθμοι αναζήτησης και ταξινόμησης
 
@@ -34,9 +34,13 @@ Templates, STL containers, STL iterators, STL αλγόριθμοι, lambdas, Tes
 
 Αναπαράσταση γραφημάτων (πίνακες γειτνίασης, λίστες γειτνίασης), ανάγνωση δεδομένων γραφήματος από αρχείο, αλγόριθμος του Dijkstra για την εύρεση των συντομότερων διαδρομών από μια κορυφή προς όλες τις άλλες κορυφές του γραφήματος.
 
-<!-- 
-
 ### Εργαστήριο 9 - Δένδρα
+
+### Παραρτήματα
+#### Eισαγωγή στο TDD (Test Driven Development)
+Test Driven Development στη C++ με τη βιβλιοθήκη [catch](https://github.com/philsquared/Catch)
+
+<!-- 
 
 ### Εργαστήριο 10 - Δυναμικός προγραμματισμός
 

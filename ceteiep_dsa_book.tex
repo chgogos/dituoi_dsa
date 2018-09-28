@@ -1,13 +1,14 @@
-\documentclass[11pt,a4paper]{book}
+\documentclass[11pt,a4paper,twoside,openany]{book}
+\usepackage[toc,page]{appendix}
 
-\usepackage{ceteiep_dsa_notes}
+\usepackage{ceteiep_dsa_notes_whitebg}
 
 % \usepackage{draftwatermark}
 % \SetWatermarkScale{1}
 
 \addto\captionsgreek{\renewcommand{\chaptername}{Εργαστήριο}}
 
-\title{Δομές Δεδομένων και Αλγόριθμοι \\ Εργαστήριο (C++)\\ Τ.Ε.Ι. Ηπείρου - Τμήμα Μηχανικών Πληροφορικής Τ.Ε. \\ Έκδοση 1.1}
+\title{Δομές Δεδομένων και Αλγόριθμοι \\ Εργαστήριο (C++)\\ Τ.Ε.Ι. Ηπείρου - Τμήμα Μηχανικών Πληροφορικής Τ.Ε. \\ Έκδοση 1.2}
 \author{Χρήστος Γκόγκος  \\ Αναπληρωτής Καθηγητής }
 \date{Χειμερινό εξάμηνο 2018-2019}
 
@@ -17,13 +18,18 @@
 \tableofcontents
 \mainmatter
 
+% Εισαγωγή
+\chapter*{Εισαγωγή}
+\addcontentsline{toc}{chapter}{Εισαγωγή}
+\input{intro_core}
+
 % Εργαστήριο 1
 \chapter{Βασικές έννοιες στη C και στη C++}
 \input{lab01_core}
 
 % Εργαστήριο 2
-\chapter{Εισαγωγή στα templates, στην STL και στα lambdas - TDD}
-\chaptermark{Templates, STL, lambdas, TDD}
+\chapter{Εισαγωγή στα templates, στην STL και στα lambdas}
+\chaptermark{Templates, STL, lambdas}
 \input{lab02_core}
 
 % Εργαστήριο 3
@@ -58,11 +64,44 @@
 \chapter{Δένδρα}
 \input{lab09_core}
 
+% Εργαστήριο 10
+%\chapter{Δυναμικός προγραμματισμός}
 
-\begin{versionhistory}
-  \vhEntry{1.0}{17.01.2018}{Χρήστος Γκόγκος}{Σημειώσεις για το εργαστήριο του μαθήματος Δομές Δεδομένων και Αλγόριθμοι}
-  \vhEntry{1.1}{21.08.2018}{Χρήστος Γκόγκος}{Σημειώσεις για το εργαστήριο του μαθήματος Δομές Δεδομένων και Αλγόριθμοι - προσθήκη κεφαλαίου 9 (δένδρα)}
-\end{versionhistory}
+\appendix
+%\chapter{Ανάπτυξη και εκσφαλμάτωση κώδικα σε C++}
+
+%\chapter{Make}
+
+%\chapter{Εκδόσεις της C++}
+
+%\chapter{Αντικειμενοστρεφής προγραμματισμός με τη C++}
+
+%\chapter{Προχωρημένα θέματα δεικτών}
+
+%\chapter{Πράξεις με δυαδικά ψηφία}
+
+%\chapter{Εξαιρέσεις}
+
+%\chapter{Κανονικές εκφράσεις}
+
+\chapter{Test Driven Development}
+\input{appendix_tdd_core}
+
+%\chapter{Παραθυρικές εφαρμογές}
+
+%\chapter{Ορίσματα γραμμής εντολών}
+
+%\chapter{Επικοινωνία της C++ με άλλες γλώσσες προγραμματισμού}
+
+%\chapter{Σειριοποίηση}
+
+%\chapter{Πολυνηματικές εφαρμογές στη C++}
+
+%\begin{versionhistory}
+%  \vhEntry{1.0}{17.01.2018}{Χρήστος Γκόγκος}{Σημειώσεις για το εργαστήριο του μαθήματος Δομές Δεδομένων και Αλγόριθμοι}
+%  \vhEntry{1.1}{21.08.2018}{Χρήστος Γκόγκος}{Σημειώσεις για το εργαστήριο του μαθήματος Δομές Δεδομένων και Αλγόριθμοι - προσθήκη κεφαλαίου 9 (δένδρα)}
+%  \vhEntry{1.2}{28.09.2018}{Χρήστος Γκόγκος}{Παράρτημα για TDD}
+%\end{versionhistory}
 
 \end{document}
 
