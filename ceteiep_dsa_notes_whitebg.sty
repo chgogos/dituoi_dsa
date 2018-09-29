@@ -1,3 +1,7 @@
+% μικρότερη απόσταση μεταξύ των sections
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.2em}{}
+
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
 
@@ -41,8 +45,7 @@
   numbersep=5pt,
   breaklines=true,
   showstringspaces=false,
-%  basicstyle=\footnotesize,
-  basicstyle=\footnotesize\linespread{0.8},
+  basicstyle=\footnotesize\linespread{0.7},
   columns=fullflexible,
   %identifierstyle=\color{magenta},
   keywordstyle=\color[rgb]{0,0,1},
