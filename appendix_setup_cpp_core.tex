@@ -1,7 +1,7 @@
 \section*{Περιβάλλοντα ανάπτυξης εφαρμογών σε C++}
 Υπάρχουν πολλοί τρόποι με τους οποίους μπορεί κανείς να αναπτύξει εφαρμογές σε C++. Κατ' ελάχιστο θα πρέπει να έχει πρόσβαση σε έναν compiler της C++ και σε έναν επεξεργαστή κειμένου. Διαδεδομένοι compilers της C++ είναι ο GNU compiler collection που περιέχει τον compiler της C (gcc) και τον compiler της C++ (g++), o clang, o Microsoft Visual C++ compiler, o C++ compiler της Intel (icc), o C++ compiler της Apple και άλλοι. Ομοίως, υπάρχουν πολλοί επεξεργαστές κειμένου που διευκολύνουν τη συγγραφή κώδικα όπως ο Visual Studio Code της Microsoft, ο SublimeText, o Atom και άλλοι.
 
-Εναλλακτικά, μπορούν να χρησιμοποιηθούν τα γνωστά ως ολοκληρωμένα συστήματα ανάπτυξης εφαρμογών (IDEs=Integrated Development Environments). Ένα IDE διευκολύνει τη δημιουργία έργων (projects), ενσωματώνει πολλά εργαλεία (εκσφαλμάτωσης, εκτίμησης απόδοσης κώδικα, ελέγχου κώδικα κ.α.) και επιτρέπει τη διαχείριση των πόρων της εφαρμογής μέσα από ένα γνώριμο περιβάλλον. Διαδεδομένα IDEs είναι τα:
+Εναλλακτικά, μπορούν να χρησιμοποιηθούν τα γνωστά ως ολοκληρωμένα συστήματα ανάπτυξης εφαρμογών (IDEs=Integrated Development Environments). Ένα IDE διευκολύνει τη δημιουργία έργων (projects), ενσωματώνει πολλά εργαλεία (αποσφαλμάτωσης, εκτίμησης απόδοσης κώδικα, ελέγχου κώδικα κ.α.) και επιτρέπει τη διαχείριση των πόρων της εφαρμογής μέσα από ένα γνώριμο περιβάλλον. Διαδεδομένα IDEs είναι τα:
 \begin{itemize}
 \item Microsoft Visual Studio
 \item JetBrains CLion
@@ -18,8 +18,100 @@
 Ένας εύχρηστος τρόπος ανάπτυξης εφαρμογών σε C++ είναι χρησιμοποιώντας τον επεξεργαστή κειμένου της Microsoft, Visual Studio Code και το μεταγλωττιστή g++. Και τα δύο λογισμικά είναι ελεύθερα διαθέσιμα και μπορούν να εγκατασταθούν και στα τρία πλέον διαδεδομένα λειτουργικά συστήματα (Windows, Linux και macOS).   
 
 \subsubsection*{Εγκατάσταση σε Windows}
-Η εγκατάσταση του g++ στα Windows μπορεί να γίνει από το MinGW Distro - nuwen.net \href{https://nuwen.net/mingw.html}{https://nuwen.net/mingw.html} ακολουθώντας τις οδηγίες στο \href{https://nuwen.net/mingw.html#install}{https://nuwen.net/mingw.html#install}. Η εγκατάσταση του Microsoft Visual Studio Code γίνεται πολύ απλά κατεβάζοντας και εκτελώντας το αντίστοιχο εκτελέσιμο από την ιστοσελίδα \href{https://code.visualstudio.com/}{https://code.visualstudio.com/}. Στη συνέχεια, μέσα από το Visual Studio Code πραγματοποιείται εγκατάσταση της επέκτασης (extention) C/C++, ms-vscode.cpptools.
+Η εγκατάσταση του g++ στα Windows μπορεί να γίνει από το \href{https://nuwen.net/mingw.html}{https://nuwen.net/mingw.html} (MinGW Distro - nuwen.net) ακολουθώντας τις αναγραφόμενες οδηγίες. Η εγκατάσταση του Microsoft Visual Studio Code γίνεται πολύ απλά κατεβάζοντας και εκτελώντας το αντίστοιχο εκτελέσιμο από τη σελίδα του Visual Studio Code \href{https://code.visualstudio.com/}{https://code.visualstudio.com/}. Στη συνέχεια, μέσα από το Visual Studio Code πραγματοποιείται εγκατάσταση της επέκτασης (extention) C/C++, ms-vscode.cpptools.
 
+\subsubsection*{Αποσφαλμάτωση μέσα από το Visual Studio Code χρησιμοποιώντας το gdb}
+Έχοντας προηγηθεί η εγκατάσταση που περιγράφηκε στην προηγούμενη παράγραφο, το Visual Studio Code μπορεί πλέον να χρησιμοποιηθεί για αποσφαλμάτωση κώδικα. Για να συμβεί αυτό θα πρέπει στον ίδιο φάκελο με τον κώδικα να δημιουργηθούν τρία αρχεία, το c\_cpp\_properties.json, το tasks.json, και το launch.json. Στη συνέχεια περιγράφονται τα βήματα που απαιτούνται για να πραγματοποιηθεί αποσφαλμάτωση στο ακόλουθο πρόγραμμα. Αναλυτικότερες οδηγίες μπορούν να βρεθούν στο \href{https://code.visualstudio.com/docs/languages/cpp}{https://code.visualstudio.com/docs/languages/cpp}. 
+
+\lstinputlisting[label=lst:bug1.cpp, caption=Κώδικας με σφάλμα (bug1.cpp)]{appendix_gdb/bug1.cpp}
+
+Μεταγλωττίζοντας και εκτελώντας τον κώδικα διαπιστώνουμε ότι το αποτέλεσμα δεν είναι το αναμενόμενο καθώς θα έπρεπε να εμφανίζεται η μεγαλύτερη από τις τιμές του πίνακα (δηλαδή η τιμή 96) και όμως εμφανίζεται η τιμή 11. Τα βήματα που θα ακολουθηθούν έτσι ώστε να επιτευχθεί αποσφαλμάτωση του κώδικα εκτελώντας τις εντολές του μια προς μια είναι τα ακόλουθα.
+
+\begin{enumerate}
+\item Επιλέγοντας το μενού View \textrightarrow Command Palette \textrightarrow C/Cpp Edit configurations..., δημιουργείται το αρχείο c\_cpp\_properties.json στο οποίο θα πρέπει να τροποποιηθεί η ιδιότητα compilerPath έτσι ώστε να δείχνει τη θέση στην οποία βρίσκεται το εκτελέσιμο του compiler g++.
+
+\begin{lstlisting}[style=DOS,caption=c\_cpp\_properties.json]
+{
+    "configurations": [
+        {
+            "name": "g++",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\mingw\\bin\\g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
+\end{lstlisting}
+
+\item Επιλέγοντας το μενού View \textrightarrow Command Palette \textrightarrow Tasks:Configure Tasks \textrightarrow Create tasks.json from template \textrightarrow msbuild, δημιουργείται το αρχείο tasks.json το οποίο θα πρέπει να τροποποιηθεί έτσι ώστε να έχει την ακόλουθη μορφή.
+
+\begin{lstlisting}[style=DOS,caption=tasks.json]
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "bug1.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+\end{lstlisting}
+
+Εφόσον έχει δημιουργηθεί το αρχείο tasks.json ο κώδικας μπορεί να μεταγλωττιστεί με το  μενού View \textrightarrow Command Palette \textrightarrow Tasks:Run Build Task, οπότε δημιουργείται το εκτελέσιμο a.exe.
+
+\item Επιλέγοντας την προβολή Debug στο Visual Studio Code και στη συνέχεια από το μενού Debug \textrightarrow Add configuration..., δημιουργείται το αρχείο launch.json στο οποίο θα πρέπει να τροποποιηθούν οι ιδιότητες program και miDebuggerPath έτσι ώστε να δείχνουν στα κατάλληλα αρχεία όπως παρακάτω.  
+
+\begin{lstlisting}[style=DOS,caption=launch.json]
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "E://mingw//bin//gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
+\end{lstlisting}
+
+Πλέον, τοποθετώντας ένα breakpoint στην αρχή του κώδικα και επιλέγοντας Debug \textrightarrow Start Debugging γίνεται η βήμα προς βήμα εκτέλεση του, η οποία αποκαλύπτει ότι ο κώδικας βρίσκει το μικρότερο στοιχείο αντί για το μεγαλύτερο που ήταν το ζητούμενο. 
+
+\end{enumerate}
 %\subsubsection*{Εγκατάσταση σε Ubuntu Linux}
 %
 %\subsubsection*{Εγκατάσταση σε macOS}
