@@ -21,7 +21,7 @@
 Η εγκατάσταση του g++ στα Windows μπορεί να γίνει από το \href{https://nuwen.net/mingw.html}{https://nuwen.net/mingw.html} (MinGW Distro - nuwen.net) ακολουθώντας τις αναγραφόμενες οδηγίες. Η εγκατάσταση του Microsoft Visual Studio Code γίνεται πολύ απλά κατεβάζοντας και εκτελώντας το αντίστοιχο εκτελέσιμο από τη σελίδα του Visual Studio Code \href{https://code.visualstudio.com/}{https://code.visualstudio.com/}. Στη συνέχεια, μέσα από το Visual Studio Code πραγματοποιείται εγκατάσταση της επέκτασης (extention) C/C++, ms-vscode.cpptools.
 
 \subsubsection*{Αποσφαλμάτωση μέσα από το Visual Studio Code χρησιμοποιώντας το gdb}
-Έχοντας προηγηθεί η εγκατάσταση που περιγράφηκε στην προηγούμενη παράγραφο, το Visual Studio Code μπορεί πλέον να χρησιμοποιηθεί για αποσφαλμάτωση κώδικα. Για να συμβεί αυτό θα πρέπει στον ίδιο φάκελο με τον κώδικα να δημιουργηθούν τρία αρχεία, το c\_cpp\_properties.json, το tasks.json, και το launch.json. Στη συνέχεια περιγράφονται τα βήματα που απαιτούνται για να πραγματοποιηθεί αποσφαλμάτωση στο ακόλουθο πρόγραμμα. Αναλυτικότερες οδηγίες μπορούν να βρεθούν στο \href{https://code.visualstudio.com/docs/languages/cpp}{https://code.visualstudio.com/docs/languages/cpp}. 
+Έχοντας προηγηθεί η εγκατάσταση που περιγράφηκε στην προηγούμενη παράγραφο, το Visual Studio Code μπορεί πλέον να χρησιμοποιηθεί για αποσφαλμάτωση κώδικα. Για να συμβεί αυτό θα πρέπει στον ίδιο φάκελο με τον κώδικα να δημιουργηθούν τρία αρχεία, το c\_cpp\_properties.json, το tasks.json, και το launch.json. Στη συνέχεια περιγράφονται τα βήματα που απαιτούνται για να πραγματοποιηθεί αποσφαλμάτωση στο ακόλουθο πρόγραμμα.  
 
 \lstinputlisting[label=lst:bug1.cpp, caption=Κώδικας με σφάλμα (bug1.cpp)]{appendix_gdb/bug1.cpp}
 
@@ -112,6 +112,9 @@
 Πλέον, τοποθετώντας ένα breakpoint στην αρχή του κώδικα και επιλέγοντας Debug \textrightarrow Start Debugging γίνεται η βήμα προς βήμα εκτέλεση του, η οποία αποκαλύπτει ότι ο κώδικας βρίσκει το μικρότερο στοιχείο αντί για το μεγαλύτερο που ήταν το ζητούμενο. 
 
 \end{enumerate}
+
+Αναλυτικότερες οδηγίες μπορούν να βρεθούν στο \href{https://code.visualstudio.com/docs/languages/cpp}{https://code.visualstudio.com/docs/languages/cpp}.
+
 %\subsubsection*{Εγκατάσταση σε Ubuntu Linux}
 %
 %\subsubsection*{Εγκατάσταση σε macOS}
