@@ -36,8 +36,16 @@ Templates, STL containers, STL iterators, STL αλγόριθμοι, lambdas.
 
 ### Εργαστήριο 9 - Δένδρα
 
+Δυαδικά δένδρα, τρόποι διάσχισης δένδρων (προ-διατακτική, ένδο-διατακτική, μέτα-διατακτική, κατά πλάτος), ισοζυγισμένα δυαδικά δένδρα. Δυαδικά δένδρα αναζήτησης.
+
 ### Παραρτήματα
-#### Eισαγωγή στο TDD (Test Driven Development)
+
+#### Α. Εγκατάσταση περιβάλλοντος ανάπτυξης προγραμμάτων C++
+
+Εγκατάσταση gcc σε Windows. Ρύθμιση Visual Studio Code για ανάπτυξη και αποσφαλμάτωση προγραμμάτων σε C++. Online C++ compilers.
+
+#### Β. Eισαγωγή στο TDD (Test Driven Development)
+
 Test Driven Development στη C++ με τη βιβλιοθήκη [catch](https://github.com/philsquared/Catch)
 
 <!-- 
