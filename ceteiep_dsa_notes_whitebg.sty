@@ -1,9 +1,12 @@
 % μικρότερη απόσταση μεταξύ των sections
 \usepackage{titlesec}
-\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.2em}{}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.1em}{}
+
+\usepackage[moderate]{savetrees}
 
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
 
 \usepackage{hyperref}
 
@@ -15,7 +18,7 @@
 
 \usepackage{vhistory}
 
-\usepackage[hmargin=2cm,vmargin=3cm]{geometry}
+\usepackage[hmargin=1cm,vmargin=2cm]{geometry}
 
 \usepackage{lipsum}
 
@@ -30,6 +33,7 @@
 
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{multicol} % 2 στήλες στον κώδικα
 
 \definecolor{lbcolor}{rgb}{0.95,0.95,0.95}
 \lstset{
