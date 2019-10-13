@@ -1,6 +1,5 @@
 \section{Εισαγωγή}
 Οι στοίβες και οι ουρές αποτελούν απλές δομές δεδομένων που είναι ιδιαίτερα χρήσιμες στην επίλυση αλγοριθμικών προβλημάτων. Η στοίβα είναι μια λίστα στοιχείων στην οποία τα νέα στοιχεία τοποθετούνται στην κορυφή και όταν πρόκειται να αφαιρεθεί ένα στοιχείο αυτό πάλι συμβαίνει από την κορυφή των στοιχείων της στοίβας. Από την άλλη μεριά, η ουρά είναι επίσης μια λίστα στοιχείων στην οποία όμως οι εισαγωγές γίνονται στο πίσω άκρο της ουράς ενώ οι εξαγωγές πραγματοποιούνται από το εμπρός άκρο της ουράς. Στο εργαστήριο αυτό θα παρουσιαστούν υλοποιήσεις της στοίβας και της ουράς. Επιπλέον, θα παρουσιαστούν οι δομές της STL std::stack και std::queue.
-Ο κώδικας όλων των παραδειγμάτων βρίσκεται στο \href{https://github.com/chgogos/ceteiep_dsa}{https://github.com/chgogos/ceteiep\_dsa}.
 
 \section{Στοίβα}
 Η στοίβα (stack) είναι μια ειδική περίπτωση γραμμικής λίστας στην οποία οι εισαγωγές και οι διαγραφές επιτρέπονται μόνο από το ένα άκρο. Συνήθως αυτό το άκρο λέγεται κορυφή (top). Πρόκειται για μια δομή στην οποία οι εισαγωγές και οι εξαγωγές γίνονται σύμφωνα με τη μέθοδο τελευταίο μέσα πρώτο έξω (LIFO=Last In First Out).
@@ -38,7 +37,7 @@
 
 Ένα παράδειγμα χρήσης της std::stack παρουσιάζεται στη συνέχεια.
 
-\lstinputlisting[caption = Παράδειγμα χρήσης της std::stack (stl\_stack\_example.cpp)]{lab05/stl_stack_example.cpp}
+\lstinputlisting[caption = Παράδειγμα χρήσης της std::stack (stl\_stack\_example.cpp), multicols=2]{lab05/stl_stack_example.cpp}
 
 \lstinputlisting[style=DOS]{lab05/stl_stack_example.out}
 
@@ -55,20 +54,20 @@
 \end{itemize}
 
 Ένα παράδειγμα χρήσης της std::queue παρουσιάζεται στη συνέχεια.
-\lstinputlisting[caption = Παράδειγμα χρήσης της std::queue (stl\_queue\_example.cpp)]{lab05/stl_queue_example.cpp}
+\lstinputlisting[caption = Παράδειγμα χρήσης της std::queue (stl\_queue\_example.cpp), multicols=2]{lab05/stl_queue_example.cpp}
 
 \lstinputlisting[style=DOS]{lab05/stl_queue_example.out}
 
 \section{Παραδείγματα}
 \subsection{Παράδειγμα 1}
 Να γραφεί πρόγραμμα που να δέχεται μια φράση ως παράμετρο γραμμής εντολών (command line argument) και να εμφανίζει το εάν είναι παλινδρομική ή όχι. Μια φράση είναι παλινδρομική όταν διαβάζεται η ίδια από αριστερά προς τα δεξιά και από δεξιά προς τα αριστερά.
-\lstinputlisting[caption = Έλεγχος παλινδρομικής φράσης (lab05\_ex1.cpp)]{lab05/lab05_ex1.cpp}
+\lstinputlisting[caption = Έλεγχος παλινδρομικής φράσης (lab05\_ex1.cpp), multicols=2]{lab05/lab05_ex1.cpp}
 
 \lstinputlisting[style=DOS]{lab05/lab05_ex1.out}
 
 \subsection{Παράδειγμα 2}
 Να γραφεί πρόγραμμα που να δέχεται ένα δυαδικό αριθμό ως λεκτικό και να εμφανίζει την ισοδύναμη δεκαδική του μορφή.
-\lstinputlisting[caption = Μετατροπή δυαδικού σε δεκαδικό (lab05\_ex2.cpp)]{lab05/lab05_ex2.cpp}
+\lstinputlisting[caption = Μετατροπή δυαδικού σε δεκαδικό (lab05\_ex2.cpp), multicols=2]{lab05/lab05_ex2.cpp}
 
 \lstinputlisting[style=DOS]{lab05/lab05_ex2.out}
 

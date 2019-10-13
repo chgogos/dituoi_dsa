@@ -8,8 +8,8 @@ using namespace std;
 using namespace std::chrono;
 
 double medians(int a[], int N) {
-  priority_queue<int, std::vector<int>, std::less<int>> pq1;
-  priority_queue<int, std::vector<int>, std::greater<int>> pq2;
+  priority_queue<int, vector<int>, less<int>> pq1;
+  priority_queue<int, vector<int>, greater<int>> pq2;
   int first = a[0];
   int second = a[1];
   if (first < second) {
@@ -54,6 +54,6 @@ int main(int argc, char **argv) {
   t2 = high_resolution_clock::now();
   duration<double, std::milli> duration = t2 - t1;
   cout.precision(2);
-  cout << "Moving medians sum = " << std::fixed << sum << " elapsed time "
+  cout << "Moving medians sum = " << fixed << sum << " elapsed time "
        << duration.count() << "ms" << endl;
 }

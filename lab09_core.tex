@@ -3,7 +3,7 @@
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=80mm]{Binary_tree.pdf}
+  \includegraphics[width=60mm]{Binary_tree.pdf}
   \caption{Ένα απλό δένδρο \cite{wikipedia_binary_tree}}
   \label{fig:binary_tree}
 \end{figure}
@@ -44,7 +44,7 @@
 
 Στην αναζήτηση κατά πλάτος (BFS=Breadth First Search) οι κόμβοι του δένδρου διανύονται κατά επίπεδα ξεκινώντας από τη ρίζα και μεταβαίνοντας από πάνω προς τα κάτω. Σε κάθε επίπεδο η προσπέλαση στους κόμβους γίνεται από αριστερά προς τα δεξιά. Για να επιτευχθεί αυτό το είδος διάσχισης του δένδρου χρησιμοποιείται μια ουρά (queue) στην οποία μόλις εξετάζεται ένα στοιχείο προστίθενται στο πίσω άκρο της ουράς τα παιδιά του.
 
-\lstinputlisting[caption = header file για το δυαδικό δένδρο (binary\_tree.hpp)]{lab09/binary_tree.hpp}
+\lstinputlisting[caption = header file για το δυαδικό δένδρο (binary\_tree.hpp), multicols=2]{lab09/binary_tree.hpp}
 
 \lstinputlisting[caption = source file για το δυαδικό δένδρο αναζήτησης (binary\_tree.cpp),multicols=2]{lab09/binary_tree.cpp}
 
@@ -52,12 +52,14 @@
 
 \begin{figure}[htbp]
   \centering
+  \begin{minipage}[b]{0.3\textwidth}
   \includegraphics[width=80mm]{binary_tree1.png}
-  \caption{Δυαδικό δένδρο με λεκτικά ως τιμές κλειδιών στους κόμβους}
   \label{fig:binary_tree1}
+  \end{minipage}
+  \caption{Δυαδικό δένδρο με λεκτικά ως τιμές κλειδιών στους κόμβους}
 \end{figure}
 
-\lstinputlisting[caption = Δοκιμή των συναρτήσεων του δυαδικού δένδρου (binary\_tree\_ex1.cpp)]{lab09/binary_tree_ex1.cpp}
+\lstinputlisting[caption = Δοκιμή των συναρτήσεων του δυαδικού δένδρου (binary\_tree\_ex1.cpp), multicols=2]{lab09/binary_tree_ex1.cpp}
 
 Η μεταγλώττιση και η εκτέλεση του κώδικα γίνεται με τις ακόλουθες εντολές:
 
@@ -81,17 +83,17 @@
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=\textwidth]{bst1.png}
     \label{fig:bst1}
-    \caption{Δυαδικό δένδρο αναζήτησης}
+        \caption{Δυαδικό δένδρο αναζήτησης}
   \end{minipage}
   \hfill
-  \begin{minipage}[b]{0.4\textwidth}
+  \begin{minipage}[b]{0.35\textwidth}
     \includegraphics[width=\textwidth]{bst2.png}
     \label{fig:bst2}
-    \caption{Το δυαδικό δένδρο αναζήτησης μετά τη διαγραφή της ρίζας}
+        \caption{Το δυαδικό δένδρο αναζήτησης μετά τη διαγραφή της ρίζας}
   \end{minipage}
 \end{figure}
 
-\lstinputlisting[caption = header file για το δυαδικό δένδρο αναζήτησης (bst.hpp)]{lab09/bst.hpp}
+\lstinputlisting[caption = header file για το δυαδικό δένδρο αναζήτησης (bst.hpp), multicols=2]{lab09/bst.hpp}
 
 \lstinputlisting[caption = source file για το δυαδικό δένδρο αναζήτησης (bst.cpp),multicols=2]{lab09/bst.cpp}
 
