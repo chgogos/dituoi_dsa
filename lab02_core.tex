@@ -5,13 +5,13 @@
 \section{Templates}
 Τα templates (πρότυπα) είναι ένας μηχανισμός της C++ ο οποίος μπορεί να διευκολύνει τον προγραμματισμό. Η γλώσσα C++ είναι statically typed το οποίο σημαίνει ότι οι τύποι δεδομένων των μεταβλητών και σταθερών ελέγχονται κατά τη μεταγλώττιση. Το γεγονός αυτό μπορεί να οδηγήσει στην ανάγκη υλοποίησης διαφορετικών εκδόσεων μιας συνάρτησης έτσι ώστε να υποστηριχθεί η ίδια λογική για διαφορετικούς τύπους δεδομένων. Για παράδειγμα, η εύρεση της ελάχιστης τιμής ανάμεσα σε τρεις τιμές θα έπρεπε να υλοποιηθεί με δύο συναρτήσεις έτσι ώστε να υποστηρίζει τόσο τους ακεραίους όσο και τους πραγματικούς αριθμούς, όπως φαίνεται στον κώδικα που ακολουθεί.
 
-\lstinputlisting[caption=Επανάληψη λογικής κώδικα (minmax.cpp)]{lab02/minmax.cpp}
+\lstinputlisting[caption=Επανάληψη λογικής κώδικα (minmax.cpp),multicols=2]{lab02/minmax.cpp}
 
 \lstinputlisting[style=DOS]{lab02/minmax.out}
 
 Με τη χρήση των templates μπορεί να γραφεί κώδικας που να υποστηρίζει ταυτόχρονα πολλούς τύπους δεδομένων.  Ειδικότερα, χρησιμοποιείται, η δεσμευμένη λέξη template και εντός των συμβόλων < και > τοποθετείται η λίστα των παραμέτρων του template. Ο μεταγλωττιστής αναλαμβάνει να δημιουργήσει όλες τις απαιτούμενες παραλλαγές των συναρτήσεων που θα χρειαστούν στον κώδικα που μεταγλωττίζει.
 
-\lstinputlisting[caption=Χρήση template για αποφυγή επανάληψης λογικής κώδικα (minmaxt.cpp)]{lab02/minmaxt.cpp}
+\lstinputlisting[caption=Χρήση template για αποφυγή επανάληψης λογικής κώδικα (minmaxt.cpp),multicols=2]{lab02/minmaxt.cpp}
 
 \lstinputlisting[style=DOS]{lab02/minmaxt.out}
 
@@ -23,13 +23,13 @@
 \subsection{Containers}
 H STL υποστηρίζει έναν αριθμό από containers στους οποίους μπορούν να αποθηκευτούν δεδομένα. Ένα από τα containers είναι το vector (διάνυσμα). Στον ακόλουθο κώδικα φαίνεται πως η χρήση του vector διευκολύνει τον προγραμματισμό καθώς δεν απαιτούνται εντολές διαχείρισης μνήμης ενώ η δομή είναι δυναμική, δηλαδή το μέγεθος της μπορεί να μεταβάλλεται κατά τη διάρκεια εκτέλεσης του προγράμματος. 
 
-\lstinputlisting[caption=Παράδειγμα με προσθήκη στοιχείων σε vector (container1.cpp)]{lab02/container1.cpp}
+\lstinputlisting[caption=Παράδειγμα με προσθήκη στοιχείων σε vector (container1.cpp),multicols=2]{lab02/container1.cpp}
 
 \lstinputlisting[style=DOS]{lab02/container1.out}
 
 Ένα container τύπου vector μπορεί να λάβει τιμές με πολλούς τρόπους. Στον ακόλουθο κώδικα παρουσιάζονται έξι διαφορετικοί τρόποι με τους οποίους μπορεί να γίνει αυτό.
 
-\lstinputlisting[caption=Αρχικοποίηση vectors (container2.cpp)]{lab02/container2.cpp}
+\lstinputlisting[caption=Αρχικοποίηση vectors (container2.cpp),multicols=2]{lab02/container2.cpp}
 \lstinputlisting[style=DOS]{lab02/container2.out}
 
 Τα containers χωρίζονται σε σειριακά (sequence containers) και συσχετιστικά (associative containers). Τα σειριακά containers είναι συλλογές ομοειδών στοιχείων στις οποίες κάθε στοιχείο  έχει συγκεκριμένη θέση μέσω της οποίας μπορούμε να αναφερθούμε σε αυτό. Τα σειριακά containers είναι τα εξής: 
@@ -55,7 +55,7 @@ H STL υποστηρίζει έναν αριθμό από containers στους 
 
 Στη συνέχεια παρουσιάζεται ένα παράδειγμα χρήσης του συσχετιστικού container map. Δημιουργείται ένας τηλεφωνικός κατάλογος που περιέχει πληροφορίες της μορφής όνομα - τηλέφωνο και ο οποίος δίνει τη δυνατότητα να αναζητηθεί ένα τηλέφωνο με βάση ένα όνομα.
 
-\lstinputlisting[caption=Παράδειγμα με map (container3.cpp)]{lab02/container3.cpp}
+\lstinputlisting[caption=Παράδειγμα με map (container3.cpp),multicols=2]{lab02/container3.cpp}
 
 \lstinputlisting[style=DOS]{lab02/container3.out}
 
@@ -63,15 +63,15 @@ H STL υποστηρίζει έναν αριθμό από containers στους 
 \subsection{Iterators}
 Οι iterators αποτελούν γενικεύσεις των δεικτών και επιτρέπουν την πλοήγηση στα στοιχεία ενός container με τέτοιο τρόπο έτσι ώστε να μπορούν να χρησιμοποιηθούν οι ίδιοι αλγόριθμοι σε περισσότερα του ενός containers. Στον ακόλουθο κώδικα παρουσιάζεται το πέρασμα από τα στοιχεία ενός vector με τέσσερις διαφορετικούς τρόπους. Καθώς το container είναι τύπου vector παρουσιάζεται αρχικά το πέρασμα από τις τιμές του με τη χρήση δεικτοδότησης τύπου πίνακα. Στη συνέχεια χρησιμοποιείται η πρόσβαση στα στοιχεία του container μέσω του range for. Ακολούθως, χρησιμοποιείται ένας iterator για πέρασμα από την αρχή προς το τέλος και ένας reverse\_iterator για πέρασμα από το τέλος προς την αρχή. 
 
-\lstinputlisting[caption = Τέσσερις διαφορετικοί τρόποι προσπέλασης των στοιχείων ενός vector (iterator1.cpp)]{lab02/iterator1.cpp}
+\lstinputlisting[caption = Τέσσερις διαφορετικοί τρόποι προσπέλασης των στοιχείων ενός vector (iterator1.cpp),multicols=2]{lab02/iterator1.cpp}
 
 \lstinputlisting[style=DOS]{lab02/iterator1.out}
 
 Ακολουθεί κώδικας στον οποίο παρουσιάζεται το πέρασμα από όλα τα στοιχεία ενός map με τρεις διαφορετικούς τρόπους. Ο πρώτος τρόπος χρησιμοποιεί range for. Ο δεύτερος έναν iterator και ο τρίτος έναν reverse iterator.
 
-\lstinputlisting[caption = Τρεις διαφορετικοί τρόποι προσπέλασης των στοιχείων ενός map (iterator2.cpp)]{lab02/iterator2.cpp}
+\lstinputlisting[caption = Τρεις διαφορετικοί τρόποι προσπέλασης των στοιχείων ενός map (iterator2.cpp),multicols=2]{lab02/iterator2.cpp}
 
-\lstinputlisting[style=DOS]{lab02/iterator2.out}
+\lstinputlisting[style=DOS,multicols=2]{lab02/iterator2.out}
 
 
 \subsection{Αλγόριθμοι}
@@ -86,29 +86,29 @@ H STL διαθέτει πληθώρα αλγορίθμων που μπορούν
 
 Η συνάρτηση sort() εφαρμόζεται σε sequence containers πλην των list και forward\_list στα οποία δεν μπορεί να γίνει απευθείας πρόσβαση σε στοιχεία τους χρησιμοποιώντας ακεραίους αριθμούς για τον προσδιορισμό της θέσης τους. Ειδικά για αυτά τα containers υπάρχει η συνάρτηση μέλος sort που επιτρέπει την ταξινόμησή τους. Στον ακόλουθο κώδικα δημιουργείται μια λίστα με αντικείμενα ορθογωνίων παραλληλογράμμων τα οποία ταξινομούνται με βάση το εμβαδόν τους σε αύξουσα σειρά. Για την ταξινόμηση των αντικειμένων παρουσιάζονται τρεις διαφορετικοί τρόποι που παράγουν το ίδιο αποτέλεσμα.
 
-\lstinputlisting[caption = Ταξινόμηση λίστας με αντικείμενα - α' τρόπος (sort2.cpp)]{lab02/sort2.cpp}
+\lstinputlisting[caption = Ταξινόμηση λίστας με αντικείμενα - α' τρόπος (sort2.cpp),multicols=2]{lab02/sort2.cpp}
 
 Θα πρέπει να σημειωθεί ότι η δεσμευμένη λέξη this στον κώδικα μιας κλάσης αναφέρεται σε έναν δείκτη προς το ίδιο το αντικείμενο για το οποίο καλούνται οι συναρτήσεις μέλη.
 
-\lstinputlisting[caption = Ταξινόμηση λίστας με αντικείμενα - β' τρόπος (sort3.cpp)]{lab02/sort3.cpp}
+\lstinputlisting[caption = Ταξινόμηση λίστας με αντικείμενα - β' τρόπος (sort3.cpp),multicols=2]{lab02/sort3.cpp}
 
-\lstinputlisting[caption = Ταξινόμηση λίστας με αντικείμενα - γ' τρόπος (sort4.cpp)]{lab02/sort4.cpp}
+\lstinputlisting[caption = Ταξινόμηση λίστας με αντικείμενα - γ' τρόπος (sort4.cpp),multicols=2]{lab02/sort4.cpp}
 
 \lstinputlisting[style=DOS]{lab02/sort2.out}
 
 Αν αντί για αντικείμενα το container περιέχει εγγραφές τύπου struct Rectangle τότε ένας τρόπος με το οποίο μπορεί να επιτευχθεί η ταξινόμηση των εγγραφών ορθογωνίων σε αύξουσα σειρά εμβαδού είναι ο ακόλουθος.
 
-\lstinputlisting[caption = Ταξινόμηση λίστας με εγγραφές (sort5.cpp)]{lab02/sort5.cpp}
+\lstinputlisting[caption = Ταξινόμηση λίστας με εγγραφές (sort5.cpp),multicols=2]{lab02/sort5.cpp}
 
 \lstinputlisting[style=DOS]{lab02/sort5.out}
 
 Αντίστοιχα, για να γίνει αναζήτηση ενός στοιχείου σε έναν ταξινομημένο πίνακα μπορούν να χρησιμοποιηθούν συναρτήσεις της STL όπως η συνάρτηση binary\_search, η συνάρτηση lower\_bound και η συνάρτηση upper\_bound. H binary\_search επιστρέφει true αν το στοιχείο υπάρχει στον πίνακα αλλιώς επιστρέφει false. Οι lower\_bound και upper\_bound εντοπίζουν την χαμηλότερη και την υψηλότερη θέση στην οποία μπορεί να εισαχθεί το στοιχείο χωρίς να διαταραχθεί η ταξινομημένη σειρά των υπόλοιπων στοιχείων. Ένα παράδειγμα χρήσης των συναρτήσεων αυτών δίνεται στον ακόλουθο κώδικα.
 
-\lstinputlisting[caption = Αναζήτηση σε ταξινομημένο πίνακα (search1.cpp)]{lab02/search1.cpp}
+\lstinputlisting[caption = Αναζήτηση σε ταξινομημένο πίνακα (search1.cpp),multicols=2]{lab02/search1.cpp}
 
 \lstinputlisting[style=DOS]{lab02/search1.out}
 
-\lstinputlisting[caption = Αναζήτηση σε ταξινομημένο διάνυσμα (search2.cpp)]{lab02/search2.cpp}
+\lstinputlisting[caption = Αναζήτηση σε ταξινομημένο διάνυσμα (search2.cpp),multicols=2]{lab02/search2.cpp}
 
 \lstinputlisting[style=DOS]{lab02/search2.out}
 
@@ -142,7 +142,7 @@ cout << "Area = " << area(3.0, 4.5) << endl;
 
 \lstinputlisting[caption = Παραδείγματα με lambdas (lambda1.cpp), multicols=2]{lab02/lambda1.cpp}
 
-\lstinputlisting[style=DOS]{lab02/lambda1.out}
+\lstinputlisting[style=DOS,multicols=2]{lab02/lambda1.out}
 
 Μια lambda έκφραση μπορεί να έχει πρόσβαση σε μεταβλητές που βρίσκονται στην εμβέλεια που περικλείει την ίδια τη lambda έκφραση. Ειδικότερα, η πρόσβαση (capture) στις εξωτερικές μεταβλητές μπορεί να γίνει είτε με αναφορά (capture by reference), είτε με τιμή (capture by value) είτε να γίνει μικτή πρόσβαση (mixed capture). Το δε συντακτικό που χρησιμοποιείται για να υποδηλώσει το είδος της πρόσβασης είναι:
 
@@ -153,7 +153,7 @@ cout << "Area = " << area(3.0, 4.5) << endl;
 \item {[a, \&b]}: πρόσβαση στην a με τιμή και πρόσβαση στη b με αναφορά
 \end{itemize}
 
-\lstinputlisting[caption = Παραδείγματα με πρόσβαση σε εξωτερικές μεταβλητές σε lambdas (lambda2.cpp),multicols=2	]{lab02/lambda2.cpp}
+\lstinputlisting[caption = Παραδείγματα με πρόσβαση σε εξωτερικές μεταβλητές σε lambdas (lambda2.cpp),multicols=2]{lab02/lambda2.cpp}
 
 \lstinputlisting[style=DOS]{lab02/lambda2.out}
 
@@ -161,7 +161,7 @@ cout << "Area = " << area(3.0, 4.5) << endl;
 \subsection{Παράδειγμα 1}
 Να γράψετε πρόγραμμα που να δημιουργεί πίνακα Α με 1.000 τυχαίες ακέραιες τιμές στο διάστημα [1, 10.000] και πίνακα Β με 100.000 τυχαίες ακέραιες τιμές στο ίδιο διάστημα τιμών. Η παραγωγή των τυχαίων τιμών να γίνει με τη γεννήτρια τυχαίων αριθμών mt19937 και με seed την τιμή 1821. Χρησιμοποιώντας τη συνάρτηση binary\_search της STL να βρεθεί πόσες από τις τιμές του Β υπάρχουν στον πίνακα Α.
 
-\lstinputlisting[caption = Λύση παραδείγματος 1 (lab02\_ex1.cpp)]{lab02/lab02_ex1.cpp}
+\lstinputlisting[caption = Λύση παραδείγματος 1 (lab02\_ex1.cpp),multicols=2]{lab02/lab02_ex1.cpp}
 
 \lstinputlisting[style=DOS]{lab02/lab02_ex1.out}
 
@@ -169,14 +169,14 @@ cout << "Area = " << area(3.0, 4.5) << endl;
 \subsection{Παράδειγμα 2}
 Η συνάρτηση accumulate() της STL επιτρέπει τον υπολογισμό αθροισμάτων στα στοιχεία ενός container. Δημιουργήστε ένα vector με διάφορες ακέραιες τιμές της επιλογής σας και υπολογίστε το άθροισμα των τιμών με τη χρήση της συνάρτησης accumulate. Επαναλάβετε τη διαδικασία για ένα container τύπου array.
 
-\lstinputlisting[caption = Λύση παραδείγματος 2 (lab02\_ex2.cpp)]{lab02/lab02_ex2.cpp}
+\lstinputlisting[caption = Λύση παραδείγματος 2 (lab02\_ex2.cpp),multicols=2]{lab02/lab02_ex2.cpp}
 
 \lstinputlisting[style=DOS]{lab02/lab02_ex2.out}
 
 \subsection{Παράδειγμα 3}
 Δημιουργήστε ένα vector που να περιέχει ονόματα. Χρησιμοποιώντας τη συνάρτηση next\_permutation() εμφανίστε όλες τις διαφορετικές διατάξεις των ονομάτων που περιέχει το vector.
 
-\lstinputlisting[caption = Λύση παραδείγματος 3 (lab02\_ex3.cpp)]{lab02/lab02_ex3.cpp}
+\lstinputlisting[caption = Λύση παραδείγματος 3 (lab02\_ex3.cpp),multicols=2]{lab02/lab02_ex3.cpp}
 
 \lstinputlisting[style=DOS]{lab02/lab02_ex3.out}
 
