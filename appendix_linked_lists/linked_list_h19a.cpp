@@ -85,6 +85,6 @@ int main()
 {
     entry *my_book = build_address_book();
     print_address_book(my_book);
-    print_address_book_r(my_book);// κλήση της αναδρομικής συνάρτησης
+    print_address_book_r(my_book); // κλήση της αναδρομικής συνάρτησης
     free_address_book(my_book);
 }

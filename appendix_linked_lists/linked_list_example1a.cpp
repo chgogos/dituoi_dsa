@@ -1,20 +1,23 @@
 #include <iostream>
 
 using namespace std;
-struct node {
+struct node
+{
   int data;
   struct node *next;
 };
 
 // C style
-void push_front(struct node **head, int data) {
+void push_front(struct node **head, int data)
+{
   struct node *new_node = new node();
   new_node->data = data;
   new_node->next = *head;
   *head = new_node;
 }
 
-int main(void) {
+int main(void)
+{
   struct node *head;
   push_front(&head, 5);
   push_front(&head, 7);

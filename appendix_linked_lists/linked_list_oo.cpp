@@ -7,54 +7,66 @@
 
 using namespace std;
 
-struct node {
+struct node
+{
   int data;
   node *next;
 };
 
-class list {
+class list
+{
 private:
   node *head, *tail;
 
 public:
-  list() {
+  list()
+  {
     head = NULL;
     tail = NULL;
   }
-  void createnode(int value) {
+  void createnode(int value)
+  {
     node *new_node = new node;
     new_node->data = value;
     new_node->next = NULL;
-    if (head == NULL) {
+    if (head == NULL)
+    {
       head = new_node;
       tail = new_node;
-    } else {
+    }
+    else
+    {
       tail->next = new_node;
       tail = new_node;
     }
   }
 
-  void display() {
+  void display()
+  {
     node *temp = head;
-    while (temp != NULL) {
+    while (temp != NULL)
+    {
       cout << temp->data << "\t";
       temp = temp->next;
     }
     cout << endl;
   }
 
-  void insert_start(int value) {
+  void insert_start(int value)
+  {
     node *new_node = new node;
     new_node->data = value;
     new_node->next = head;
     head = new_node;
   }
 
-  void insert_position(int pos, int value) {
+  void insert_position(int pos, int value)
+  {
     node *pre;
     node *cur = head;
     node *new_node = new node;
-    for (int i = 0; i < pos; i++) {
+    for (int i = 0; i < pos; i++)
+    {
       pre = cur;
       cur = cur->next;
     }
@@ -63,16 +75,19 @@ public:
     new_node->next = cur;
   }
 
-  void delete_first() {
+  void delete_first()
+  {
     node *temp = head;
     head = head->next;
     delete temp;
   }
 
-  void delete_last() {
+  void delete_last()
+  {
     node *current = head;
     node *previous;
-    while (current->next != NULL) {
+    while (current->next != NULL)
+    {
       previous = current;
       current = current->next;
     }
@@ -81,13 +96,16 @@ public:
     delete current;
   }
 
-  void delete_position(int pos) {
+  void delete_position(int pos)
+  {
     if (pos == 0)
       delete_first();
-    else {
+    else
+    {
       node *current = head;
       node *previous;
-      for (int i = 0; i < pos; i++) {
+      for (int i = 0; i < pos; i++)
+      {
         previous = current;
         current = current->next;
       }
@@ -96,7 +114,8 @@ public:
   }
 };
 
-int main() {
+int main()
+{
   list alist;
   cout << "insert 3 items (10,20,30)" << endl;
   alist.createnode(10);
