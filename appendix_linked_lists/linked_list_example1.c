@@ -17,7 +17,7 @@ void push_front(struct node **head, int data)
 
 int main(void)
 {
-  struct node *head;
+  struct node *head = NULL;
   push_front(&head, 5);
   push_front(&head, 7);
   push_front(&head, 2);
