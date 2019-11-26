@@ -1,4 +1,5 @@
-// see https://github.com/fredoverflow/skorbut-release
+// https://github.com/fredoverflow/skorbut-release
+
 #include <cstdio>
 
 using namespace std;
@@ -57,7 +58,12 @@ void scenario3()
 
 int main()
 {
+    printf("Testing scenario 1 (not ok swap)\n");
     scenario1();
+
+    printf("Testing scenario 2 (ok swap)\n");
     scenario2();
+
+    printf("Testing scenario 3 (ok swap)\n");
     scenario3();
 }
