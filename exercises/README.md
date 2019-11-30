@@ -70,13 +70,13 @@
 
 - Δεδομένα: [students.txt](./students.txt)
 - Κώδικας: [y19s2e2a.cpp](./y19s2e2a.cpp)
-  - Μεταγλώττιση: $ g++ y19s2e2a.cpp -std=c++11 -o y19s2e2a
+  - Μεταγλώττιση: $ g++ y19s2e2a.cpp -o y19s2e2a -std=c++11 -Wall
   - Εκτέλεση: $ ./y19s2e2a < students.txt > y19s2e2a.out
 - Έξοδος: [y19s2e2a.out](./y19s2e2a.out)
 
 #### ΛΥΣΗ ΣΕΤ 2 ΑΣΚΗΣΗ 2 (β' μέρος, υλοποίηση με διπλά συνδεδεμένη λίστα της STL)
 
 - Κώδικας: [y19s2e2b.cpp](./y19s2e2b.cpp)
-  - Μεταγλώττιση: $ g++ y19s2e2b.cpp -std=c++11 -o y19s2e2b
+  - Μεταγλώττιση: $ g++ y19s2e2b.cpp -o y19s2e2b -std=c++11 -Wall
   - Εκτέλεση: $ ./y19s2e2b < students.txt > y19s2e2b.out
 - Έξοδος: [y19s2e2b.out](./y19s2e2b.out)
