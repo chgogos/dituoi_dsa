@@ -1,3 +1,4 @@
+// ο κώδικας υπολογίζει την έλάχιστη τιμή αντί για τη μέγιστη.
 #include <iostream>
 
 using namespace std;
