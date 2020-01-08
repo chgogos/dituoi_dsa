@@ -1,0 +1,18 @@
+id:0 ts:2019-12-01 12:37:15 data:GENESIS block nonce:7705472 previous hash:0 hash:7409222825570000000
+id:1 ts:2019-12-01 12:37:24 data:Alice pays 10 euros to Bob nonce:20662197 previous hash:7409222825570000000 hash:14415237325170000000
+id:2 ts:2019-12-01 12:37:55 data:Bob pays 5 euros to Carl nonce:4180543 previous hash:14415237325170000000 hash:9785420976540000000
+id:3 ts:2019-12-01 12:38:02 data:Carl pays 10 euros to David nonce:3124703 previous hash:9785420976540000000 hash:15500881473790000000
+id:4 ts:2019-12-01 12:38:07 data:David pays 2 euros to Alice nonce:11311765 previous hash:15500881473790000000 hash:17403203628000000000
+id:5 ts:2019-12-01 12:38:24 data:Alice pays 2 euros to Bob nonce:28602793 previous hash:17403203628000000000 hash:847005160950000000
+id:6 ts:2019-12-01 12:39:08 data:Bob pays 5 euros to David nonce:5567229 previous hash:847005160950000000 hash:10509950750660000000
+id:7 ts:2019-12-01 12:39:17 data:Carl pays 5 euros to Alice nonce:6164283 previous hash:10509950750660000000 hash:11846123523500000000
+Valid blockchain
+id:0 ts:2019-12-01 12:37:15 data:GENESIS block nonce:7705472 previous hash:0 hash:7409222825570000000
+id:1 ts:2019-12-01 12:37:24 data:Alice pays 10 euros to Bob nonce:20662197 previous hash:7409222825570000000 hash:14415237325170000000
+id:2 ts:2019-12-01 12:37:55 data:Bob pays 5 euros to Carl nonce:4180543 previous hash:14415237325170000000 hash:9785420976540000000
+id:3 ts:2019-12-01 12:38:02 data:Carl pays 10 euros to David nonce:3124703 previous hash:9785420976540000000 hash:15500881473790000000
+id:4 ts:2019-12-01 12:38:07 data:David pays 2 euros to Alice nonce:11311765 previous hash:15500881473790000000 hash:17403203628000000000
+id:5 ts:2019-12-01 12:38:24 data:Alice pays 2 euros to Bob nonce:28602793 previous hash:17403203628000000000 hash:847005160950000000
+id:6 ts:2019-12-01 12:39:08 data:Bob pays 5000 euros to David nonce:5567229 previous hash:847005160950000000 hash:11732684735707904394
+id:7 ts:2019-12-01 12:39:17 data:Carl pays 5 euros to Alice nonce:6164283 previous hash:10509950750660000000 hash:11846123523500000000
+Invalid blockchain

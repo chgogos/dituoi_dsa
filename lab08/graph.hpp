@@ -1,11 +1,17 @@
-#include <fstream>
-#include <iostream>
+#ifndef GRAPH_HPP
+#define GRAPH_HPP 
+
 #include <map>
-#include <sstream>
 #include <utility>
 #include <vector>
+#include <string>
 
 using namespace std;
 
-map<string, vector<pair<int, string>>> read_data(string fn);
-void print_graph(map<string, vector<pair<int, string>>> &g);
+typedef map<string, vector<pair<int, string>>> w_graph;
+
+w_graph read_data(string fn);
+
+void print_graph(w_graph &g);
+
+#endif

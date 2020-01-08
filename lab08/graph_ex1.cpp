@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-  map<string, vector<pair<int, string>>> graph = read_data("graph1.txt");
+  string fn("graph1.txt"); 
+  w_graph graph = read_data(fn);
   print_graph(graph);
   return 0;
 }

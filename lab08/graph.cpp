@@ -1,9 +1,12 @@
+#include <fstream>
+#include <iostream>
+#include <sstream>
 #include "graph.hpp"
 
 using namespace std;
 
-map<string, vector<pair<int, string>>> read_data(string fn) {
-  map<string, vector<pair<int, string>>> graph;
+w_graph read_data(string fn) {
+  w_graph graph;
   fstream filestr;
   string buffer;
   filestr.open(fn.c_str());
@@ -31,7 +34,7 @@ map<string, vector<pair<int, string>>> read_data(string fn) {
   return graph;
 }
 
-void print_graph(map<string, vector<pair<int, string>>> &g) {
+void print_graph(w_graph &g) {
   for (const auto &p1 : g) {
     for (const auto &p2 : p1.second)
       cout << p1.first << "<--" << p2.first << "-->" << p2.second << " ";

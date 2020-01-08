@@ -1,22 +1,27 @@
-#include "dijkstra.hpp"
-#include "graph.hpp"
 #include <algorithm> // max_element
 #include <sstream>
+#include <iostream>
+#include "dijkstra.hpp"
+#include "graph.hpp"
 
 using namespace std;
 
-int main() {
-  map<string, vector<pair<int, string>>> graph = read_data("graph2.txt");
-  for (auto &kv : graph) {
+int main()
+{
+  w_graph graph = read_data("graph2.txt");
+  for (auto &kv : graph)
+  {
     double sum = 0.0;
-    for (auto &p : kv.second) {
+    for (auto &p : kv.second)
+    {
       sum += p.first;
     }
     cout << "Vertex " << kv.first << " has degree " << kv.second.size()
          << " and average weighted degree " << sum / kv.second.size() << endl;
   }
 
-  for (auto &kv : graph) {
+  for (auto &kv : graph)
+  {
     string source_vertex = kv.first;
     cout << "Source " << source_vertex << ": ";
     map<string, path_info> shortest_path_distances;
@@ -28,7 +33,8 @@ int main() {
       distances.push_back(p.second.cost);
     int max = *(max_element(distances.begin(), distances.end()));
 
-    for (int i = 1; i <= max; i++) {
+    for (int i = 1; i <= max; i++)
+    {
       stringstream ss;
       ss << "dist=" << i << "->{";
       for (auto &p : shortest_path_distances)
