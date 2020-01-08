@@ -1,0 +1,9 @@
+A->B 
+B->C D E 
+C->E 
+D->E 
+E->F 
+F->
+G->D 
+A G B C D E F 
+memory freed
