@@ -4,9 +4,9 @@ using namespace std;
 void fun(int a[][3], int i, int &sum, int &min)
 {
     sum = 0;
+    min = a[i][0];
     for (int j = 0; j < 3; j++)
     {
-        min = a[i][0];
         if (a[i][j] < min)
             min = a[i][j];
         sum += a[i][j];
