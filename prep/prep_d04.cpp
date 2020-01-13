@@ -17,7 +17,5 @@ int main()
     }
 
     for (auto &kv : players)
-    {
         cout << "Player: " << kv.first << " score:" << kv.second << endl;
-    }
 }
