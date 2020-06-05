@@ -10,7 +10,7 @@ void func1(int a[], int N, double x, int &c, double &sum) {
     if (a[i] > x)
       c++;
     sum += fabs(x - a[i]);
-  }
+    }
 }
 
 int main(void) {
