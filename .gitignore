@@ -33,5 +33,5 @@ lab09.out
 *.exe
 *.o
 
-# Unfinished
-# ceteiep_dsa_book.pdf
+.DS_Store
+tempCodeRunnerFile.cpp
