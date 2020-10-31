@@ -68,3 +68,18 @@ int main()
     for (auto c : a_list)
         cout << c.name << " " << c.phone << endl;
 }
+
+/*
+Linked List
+nikos 6977123456
+petros 6977234567
+maria 6977345678
+kostas 6977456789
+anna 6977567890
+STL Linked List
+nikos 6977123456
+petros 6977234567
+maria 6977345678
+kostas 6977456789
+anna 6977567890
+*/
