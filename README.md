@@ -21,10 +21,6 @@
 
 ---
 
-* [Δομές Δεδομένων και Αλγόριθμοι - eclass (Στύλιος Χρυσόστομος)](https://www.dit.uoi.gr/e-class/courses/121/)
-
----
-
 * [Συνδεδεμένες λίστες (pdf)](./appendix_linked_lists/linked%20lists.pdf)
 * [Δείκτες στη C και στη C++ (pdf)](./appendix_pointers/Pointers%20in%20C%20and%20C++.pdf)
 
