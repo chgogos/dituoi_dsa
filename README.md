@@ -15,7 +15,7 @@
 * [Αναδρομή (pdf)](./docs/dda03.pdf)
 * [Ταξινόμηση - αναζήτηση (pdf)](./docs/dda04.pdf)
 * [Γραφήματα - αλγόριθμοι γραφημάτων (pdf)](./docs/dda05.pdf)
-* [Αλγόριθμοι brute force (pdf)](./docs/dda06.pdf)
+<!-- * [Αλγόριθμοι brute force (pdf)](./docs/dda06.pdf) -->
 
 ---
 
